@@ -18,7 +18,7 @@ export default function Jumbotron() {
         -webkit-text-stroke: 1px white;
     `
   return (
-    <div className='relative'>
+    <div className='relative h-screen overflow-y-hidden'>
         <Video className={`relative w-full h-screen ${style.video}`}>
 				<video
 					muted={true}
@@ -38,7 +38,7 @@ export default function Jumbotron() {
         </div>
         <img
         src='/assets/images/awanJumbotron.svg'
-        className='w-full object-cover absolute bottom-0 lg:-bottom-10'/>
+        className='w-full object-cover absolute -bottom-[16px] md:-bottom-[28px] lg:-bottom-14'/>
     </div>
   )
 }
