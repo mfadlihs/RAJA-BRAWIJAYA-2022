@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* html,
+/* Import Font */
+@layer base {
+	:root {
+	}
+	@font-face {
+		font-family: "BataviaGlamore";
+		font-style: normal;
+		font-weight: 400;
+		src: local(""),
+			url(/assets/fonts/BataviaGlamore/GLAMOREREGULAR.woff2) format("woff2");
+	}
+	@font-face {
+		font-family: "poppins";
+		font-style: normal;
+		font-weight: 400;
+		src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+	}
+	@font-face {
+		font-family: "poppins";
+		font-style: normal;
+		font-weight: 500;
+		src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+	}
+	@font-face {
+		font-family: "poppins";
+		font-style: normal;
+		font-weight: 600;
+		src: url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+	}
+	@font-face {
+		font-family: "poppins";
+		font-style: normal;
+		font-weight: 700;
+		src: url(/assets/fonts/Poppins/Poppins-Bold.ttf);
+	}
+	@font-face {
+		font-family: "droid";
+		font-style: normal;
+		font-weight: 400;
+		src: url(/assets/fonts/Droid/DroidSerif.ttf);
+	}
+	@font-face {
+		font-family: "droid";
+		font-style: italic;
+		font-weight: 700;
+		src: url(/assets/fonts/Droid/DroidSerif-BoldItalic.ttf);
+	}
+	@font-face {
+		font-family: "droid";
+		font-style: normal;
+		font-weight: 700;
+		src: url(/assets/fonts/Droid/DroidSerif-Bold.ttf);
+	}
+	@font-face {
+		font-family: "agrandir";
+		font-style: normal;
+		font-weight: 300;
+		src: url(/assets/fonts/Agrandir/Agrandir-GrandLight.otf);
+	}
+	@font-face {
+		font-family: "agrandir";
+		font-style: normal;
+		font-weight: 700;
+		src: url(/assets/fonts/Agrandir/Agrandir-TextBold.otf);
+	}
+	/* h1 {
+		@apply lg:text-h1 
+    font-droid 
+    md:text-h1-md 
+    sm:text-h1-sm
+    text-h1-sm
+    font-bold;
+	}
+	h2 {
+		@apply lg:text-h2
+    md:text-h2-md
+    sm:text-h2-sm
+    text-h2-sm
+    font-agrandir
+    font-bold;
+	}
+	p {
+		@apply font-poppins
+    lg:text-body
+    md:text-body-md
+    sm:text-body-sm
+    text-body-sm
+    font-medium;
+	}
+	h6 {
+		@apply font-poppins
+    lg:text-desc
+    md:text-desc-md
+    sm:text-desc-sm
+    text-desc-sm
+    font-semibold;
+	}
+	iframe {
+		@apply w-full h-full;
+	} */
+}
+
+/* 
+h1 {
+	font-size: 64px;
+	font-family: "droid", "serif";
+	font-weight: 700;
+	color: #000000;
+}
+
+/* h2 
+h2 {
+	font-size: 48px;
+	font-family: "agrandir", "sans-serif";
+	font-weight: 700;
+}
+*/
+
+/* body */
+/*p {
+	font-family: "poppins", "sans-serif";
+	font-size: 24px;
+	font-weight: 500;
+}*/
+
+/* bodysmall 
+h6 {
+	font-family: "poppins", "sans-serif";
+	font-weight: 600;
+	font-size: 16px;
+}
+*/
