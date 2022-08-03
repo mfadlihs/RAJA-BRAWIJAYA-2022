@@ -4,22 +4,9 @@ import style from './style.module.css'
 
 export default function Jumbotron() {
 
-    const Video = styled.div`
-        &::after{
-            content : '';
-            position : absolute;
-            inset : 0;
-            background : #033E50;
-            opacity : 80%;
-        }
-    `
-
-    const Text2022 = styled.h3`
-        -webkit-text-stroke: 1px white;
-    `
   return (
     <div className='relative h-screen overflow-y-hidden'>
-        <Video className={`relative w-full h-screen ${style.video}`}>
+        <div className={`relative w-full h-screen ${style.video}`}>
 				<video
 					muted={true}
 					className='object-cover z-10 w-full h-full'
@@ -29,11 +16,11 @@ export default function Jumbotron() {
 				>
 					<source src='/assets/videos/v.mp4' type='video/mp4' />
 				</video>
-        </Video>
+        </div>
         <div className="absolute inset-0">
             <div className="container mx-auto relative flex flex-col h-full lg:flex-row lg:items-center">
                 <h1 className='font-droid mt-52 lg:mt-0 text-6xl md:text-[120px] lg:w-4/6 text-white'>RAJA Brawijaya</h1>
-                <Text2022 className={`text-8xl md:text-[146px] mt-28 lg:mt-0 font-droid text-trans stroke-white lg:rotate-90 lg:absolute lg:right-0  ${style.stroke}`}>2022</Text2022>
+                <h2 className={`text-8xl md:text-[146px] mt-28 lg:mt-0 font-droid text-trans stroke-white lg:rotate-90 lg:absolute lg:right-0  ${style.stroke}`}>2022</h2>
             </div>
         </div>
         <img
