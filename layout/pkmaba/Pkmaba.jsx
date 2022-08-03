@@ -84,7 +84,8 @@ export default function Pkmaba() {
             setActive={(e)=>{
                 setActive(e);
             }}
-            data={dataPk}/>
+            data={dataPk}
+            active={getData().fakultas}/>
         </div>
     </div>
   )

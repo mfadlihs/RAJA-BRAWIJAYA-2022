@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-export default function Dropdown({data,setActive}) {
+export default function Dropdown({data,setActive,active}) {
     const [drop,setDrop] = useState(false);
     const [search,setSearch] = useState('');
   return (
@@ -11,7 +11,7 @@ export default function Dropdown({data,setActive}) {
                 setDrop(!drop);
             }}
             className='flex items-center py-3 px-4 mx-auto mt-8 w-full justify-between bg-blue text-white rounded-lg'>
-                <p>Fakultas Perikanan dan Ilmu Kelautan</p>
+                <p>{active}</p>
                 <img src='/assets/icons/arrdown.svg' width={20} className="mt-1"/>
             </button>
 

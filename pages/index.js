@@ -7,6 +7,8 @@ import Rangkaian from "../layout/rangkaian/Rangkaian";
 import Pkmaba from "../layout/pkmaba/Pkmaba";
 import Logo from "../layout/logo/Logo";
 import { useEffect, useState } from "react";
+import Head from "next/head";
+import Footer from "../layout/footer/Footer";
 
 export default function Home() {
 
@@ -24,6 +26,9 @@ export default function Home() {
   })
   return (
     <div>
+      <Head>
+        <title>Raja Brawijaya 2022</title>
+      </Head>
       <Nav onActive={nav}/>
       <Jumbotron />
       <Perkenalan />
@@ -32,6 +37,7 @@ export default function Home() {
       <Sekilas />
       <Rangkaian />
       <Pkmaba/>
+      <Footer/>
     </div>
   );
 }
