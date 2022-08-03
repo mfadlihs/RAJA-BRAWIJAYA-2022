@@ -4,6 +4,7 @@ import Nav from "../layout/nav/Nav";
 import Perkenalan from "../layout/perkenalan/Perkenalan";
 import Sekilas from "../layout/sekilas/Sekilas";
 import Rangkaian from "../layout/rangkaian/Rangkaian";
+import Pkmaba from "../layout/pkmaba/Pkmaba";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Adicitta />
       <Sekilas />
       <Rangkaian />
+      <Pkmaba/>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import RangkaianSlide from '../../component/rangkaian/RangkaianSlide';
 
 export default function Rangkaian() {
   return (
-    <div className='bg-blue pt-24'>
+    <div className='bg-blue py-24'>
         <Heading
         topWhite
         top="Rangkaian"
