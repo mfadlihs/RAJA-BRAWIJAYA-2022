@@ -1,0 +1,12 @@
+.swiper-pagination-progressbar{
+    background : white !important;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background : #FE6722 !important;
+}
+
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+    top : unset !important;
+    bottom : 0px !important;
+}

@@ -3,6 +3,7 @@ import Jumbotron from "../layout/jumbotron/Jumbotron";
 import Nav from "../layout/nav/Nav";
 import Perkenalan from "../layout/perkenalan/Perkenalan";
 import Sekilas from "../layout/sekilas/Sekilas";
+import Rangkaian from "../layout/rangkaian/Rangkaian";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Perkenalan />
       <Adicitta />
       <Sekilas />
+      <Rangkaian />
     </div>
   );
 }
