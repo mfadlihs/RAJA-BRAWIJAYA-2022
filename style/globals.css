@@ -6,6 +6,12 @@
 @layer base {
   :root {
   }
+  div {
+    @apply transition-all duration-500 ease-in-out;
+  }
+  .container {
+    @apply max-w-screen-xl mx-auto;
+  }
   @font-face {
     font-family: "BataviaGlamore";
     font-style: normal;
