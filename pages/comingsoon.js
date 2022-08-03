@@ -3,6 +3,7 @@ import { Background, Pattern } from "../constants/Images";
 import Link from "next/link";
 import { SosialMedia } from "../constants/Dummy";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 export default function ComingSoon() {
   const [hari, setHari] = useState();
   const [jam, setJam] = useState();
@@ -35,6 +36,9 @@ export default function ComingSoon() {
   });
   return (
     <div className="w-screen min-h-screen flex justify-center items-center container ">
+      <Head>
+        <title> RAJA Brawijaya | Adicitta 2020</title>
+      </Head>
       <div className=" w-full h-full absolute overflow-hidden opacity-10 drop-shadow-md">
         <Image
           src={Background.CandiHijau}
