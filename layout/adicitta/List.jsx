@@ -7,7 +7,7 @@ export default function List({img,name}) {
             <img
             src={img}/>
         </button>
-        <h4 className='font-agrandir text-center text-lg text-white mt-3'>{name}</h4>
+        <h4 className='font-agrandir text-center text-2xl text-white mt-3'>{name}</h4>
     </div>
   )
 }
