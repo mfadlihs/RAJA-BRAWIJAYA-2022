@@ -9,12 +9,12 @@ import 'swiper/css';
 export default function Sekilas() {
   return (
     <div>
-        <div className={`container over mx-auto bg-cover bg-left-top flex flex-col justify-center bg-white ${style.bg}`}>
+        <div className={`container over mx-auto bg-left-top flex h-[50px] flex-col justify-center bg-white ${style.bg}`}>
             <h3 className='text-center w-fit ml-auto font-agrandir text-blue mb-20'>
                 <span className='text-orange'>Sekilas</span><br/>RAJA BRAWIJAYA
             </h3>
         </div>
-        <div className='bg-blue'>
+        {/* <div className='bg-blue'>
             <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
@@ -30,7 +30,7 @@ export default function Sekilas() {
                 <SwiperSlide>Slide 3</SwiperSlide>
                 <SwiperSlide>Slide 4</SwiperSlide>
             </Swiper>
-        </div>
+        </div> */}
     </div>
   )
 }
