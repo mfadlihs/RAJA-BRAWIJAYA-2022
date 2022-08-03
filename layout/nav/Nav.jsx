@@ -4,26 +4,28 @@ import React, { useEffect, useRef, useState } from "react";
 import style from "./nav.module.css";
 import Navlink from "../../component/navlink/Navlink";
 
-export default function Nav({ bg }) {
+export default function Nav({ bg,onActive}) {
   const [scroll, setScroll] = useState(false);
   const [show, setShow] = useState(false);
   const [active, setActive] = useState("beranda");
 
-  useEffect(() => {
-    window.onscroll = () => {
-      if (window.scrollY > 20) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
-    };
-  });
+  // useEffect(() => {
+  //   window.onscroll = () => {
+  //     if (window.scrollY > 20) {
+  //       setScroll(true);
+  //     } else {
+  //       setScroll(false);
+  //     }
+  //   };
+  // });
+  useEffect(()=>{
+    console.log(onActive);
+  })
 
   return (
     <nav
-      className={`transition-all duration-500 fixed w-full py-2 top-0 z-50 ${
-        scroll || !bg ? "bg-blue" : "bg-trans"
-      } ${show ? "bg-grey" : "bg-trans"}`}
+      className={`transition-all duration-500 fixed w-full py-2 top-0 z-50 
+      ${onActive ? "bg-blue" : "bg-trans"} ${show ? "bg-grey" : " "}`}
     >
       <div className="container mx-auto flex items-center justify-between">
         {/* left */}

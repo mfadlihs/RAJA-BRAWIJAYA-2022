@@ -26,7 +26,10 @@ export default function Sekilas() {
             <Swiper
                 modules={[Pagination,Navigation]}
                 spaceBetween={50}
-                pagination
+                pagination = {{
+                    type : "progressbar"
+                }
+                }
                 navigation= {{
                     nextEl: '.swipe-next-c',
                     prevEl : '.swipe-prev-c'
@@ -38,9 +41,6 @@ export default function Sekilas() {
                     767.8 : {
                         slidesPerView : 2,
                         spaceBetween : 20,
-                        pagination : {
-                            type : "progressbar"
-                        }
                     }
                 }}
                 >
