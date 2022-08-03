@@ -4,70 +4,70 @@
 /* html,
 /* Import Font */
 @layer base {
-	:root {
-	}
-	@font-face {
-		font-family: "BataviaGlamore";
-		font-style: normal;
-		font-weight: 400;
-		src: local(""),
-			url(/assets/fonts/BataviaGlamore/GLAMOREREGULAR.woff2) format("woff2");
-	}
-	@font-face {
-		font-family: "poppins";
-		font-style: normal;
-		font-weight: 400;
-		src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
-	}
-	@font-face {
-		font-family: "poppins";
-		font-style: normal;
-		font-weight: 500;
-		src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
-	}
-	@font-face {
-		font-family: "poppins";
-		font-style: normal;
-		font-weight: 600;
-		src: url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
-	}
-	@font-face {
-		font-family: "poppins";
-		font-style: normal;
-		font-weight: 700;
-		src: url(/assets/fonts/Poppins/Poppins-Bold.ttf);
-	}
-	@font-face {
-		font-family: "droid";
-		font-style: normal;
-		font-weight: 400;
-		src: url(/assets/fonts/Droid/DroidSerif.ttf);
-	}
-	@font-face {
-		font-family: "droid";
-		font-style: italic;
-		font-weight: 700;
-		src: url(/assets/fonts/Droid/DroidSerif-BoldItalic.ttf);
-	}
-	@font-face {
-		font-family: "droid";
-		font-style: normal;
-		font-weight: 700;
-		src: url(/assets/fonts/Droid/DroidSerif-Bold.ttf);
-	}
-	@font-face {
-		font-family: "agrandir";
-		font-style: normal;
-		font-weight: 300;
-		src: url(/assets/fonts/Agrandir/Agrandir-GrandLight.otf);
-	}
-	@font-face {
-		font-family: "agrandir";
-		font-style: normal;
-		font-weight: 700;
-		src: url(/assets/fonts/Agrandir/Agrandir-TextBold.otf);
-	}
-	/* h1 {
+  :root {
+  }
+  @font-face {
+    font-family: "BataviaGlamore";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+      url(/assets/fonts/BataviaGlamore/GLAMOREREGULAR.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: "poppins";
+    font-style: normal;
+    font-weight: 500;
+    src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+  }
+  @font-face {
+    font-family: "poppins";
+    font-style: normal;
+    font-weight: 600;
+    src: url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: "poppins";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/assets/fonts/Poppins/Poppins-Bold.ttf);
+  }
+  @font-face {
+    font-family: "droid";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/Droid/DroidSerif.ttf);
+  }
+  @font-face {
+    font-family: "droid";
+    font-style: italic;
+    font-weight: 700;
+    src: url(/assets/fonts/Droid/DroidSerif-BoldItalic.ttf);
+  }
+  @font-face {
+    font-family: "droid";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/assets/fonts/Droid/DroidSerif-Bold.ttf);
+  }
+  @font-face {
+    font-family: "agrandir";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/Agrandir/Agrandir-Regular.otf);
+  }
+  @font-face {
+    font-family: "agrandir";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/assets/fonts/Agrandir/Agrandir-TextBold.otf);
+  }
+  /* h1 {
 		@apply lg:text-h1 
     font-droid 
     md:text-h1-md 
