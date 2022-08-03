@@ -19,7 +19,11 @@ export default function Jumbotron() {
         </div>
         <div className="absolute inset-0">
             <div className="container mx-auto relative flex flex-col h-full lg:flex-row lg:items-center">
-                <h1 className='font-droid mt-52 lg:mt-0 text-6xl md:text-[120px] lg:w-4/6 text-white'>RAJA Brawijaya</h1>
+                <div>
+                    <h1 className='font-droid mt-52 lg:mt-0 text-6xl md:text-[120px] lg:w-4/6 text-white'>RAJA Brawijaya</h1>
+                    <hr className='h-1 mt-3 lg:mt-5 stroke-0 rounded-full bg-white'/>
+                    <p className='text-lg mt-3 text-white md:text-xl font-poppins'>Rangkaian Acara Jelajah Almamater Universitas Brawijaya</p>
+                </div>
                 <h2 className={`text-8xl md:text-[146px] mt-28 lg:mt-0 font-droid text-trans stroke-white lg:rotate-90 lg:absolute lg:right-0  ${style.stroke}`}>2022</h2>
             </div>
         </div>

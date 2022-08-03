@@ -8,7 +8,7 @@ export default function Adicitta() {
         <div className='container'>
             <div className="bg-blue rounded-lg p-10 lg:flex lg:items-center">
                 <div className='w-1/2 mx-auto lg:w-1/4 lg:ml-10'>
-                    <h4 className='text-white text-center font-agrandir text-4xl font-semibold lg:text-start lg:text-6xl lg:w-1/2'>Adicitta Info</h4>
+                    <h4 className='text-white text-center font-agrandir text-4xl font-semibold lg:text-start lg:text-6xl lg:w-1/2'>Adicitta <span className='opacity-50'>Info</span></h4>
                     <Button className="hidden lg:block lg:mt-6">Lihat lainnya</Button>
                 </div>
                 <div className='md:flex md:mt-6 lg:w-3/4 lg:justify-center'>
