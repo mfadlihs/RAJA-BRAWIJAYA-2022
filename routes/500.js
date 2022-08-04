@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { Background, Pattern } from "../constants/Images";
 import Link from "next/link";
-import LoadingPage from "../component/LoadingPage";
-export default function Custom404() {
+export default function Custom500() {
 	return (
 		<div className='w-screen min-h-screen flex justify-center items-center container '>
 			<div className=' w-full h-full absolute overflow-hidden opacity-10 drop-shadow-md'>
@@ -28,7 +27,8 @@ export default function Custom404() {
 						404
 					</h2>
 					<h2 className=' text-secondary font-agrandir font-extrabold text-base md:text-2xl text-center'>
-						Halaman tidak ditemukan, mau kemana braw? balik ke{" "}
+						Page ini sedang dalam perbaikan. Dimohon untuk kembali lagi di lain
+						waktu! balik ke{" "}
 						<Link href='/'>
 							<span className='!text-primary underline cursor-pointer'>
 								landing page
