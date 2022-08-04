@@ -8,6 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import Heading from '../../component/heading/Heading';
 import Ytvideo from '../../component/video/Ytvideo';
+import {motion} from 'framer-motion'
 
 
 export default function Sekilas() {
@@ -60,10 +61,22 @@ export default function Sekilas() {
                     id={"SJXdAxNX0Ow"}
                     name="Countdown Raja Brawijaya 2021"/>
                 </SwiperSlide>
-                <button
-                className='absolute swipe-prev-c bottom-0 md:bottom-0 left-0 z-50 text-white font-agrandir'>&larr; Geser ke kiri</button>
-                <button
-                className='swipe-next-c absolute bottom-0 md:bottom-0 z-50 right-0 text-white font-agrandir'>Geser ke Kanan &rarr;</button>
+                <motion.button
+                whileHover={{
+                    x : -10
+                }}
+                transition={{
+                    duration : 0.5
+                }}
+                className='absolute swipe-prev-c bottom-0 md:bottom-0 left-0 z-50 text-white font-agrandir'>&larr; Geser ke kiri</motion.button>
+                <motion.button
+                whileHover={{
+                    x : 10
+                }}
+                transition={{
+                    duration : 0.5
+                }}
+                className='swipe-next-c absolute bottom-0 md:bottom-0 z-50 right-0 text-white font-agrandir'>Geser ke Kanan &rarr;</motion.button>
             </Swiper>
         </div>
         <img

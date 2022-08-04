@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import style from './style.module.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 export default function Heading({top,bottom,direction,className,topWhite}) {
+
+  useEffect(()=>{
+    Aos.init();
+    Aos.refresh();
+  },[])
   return (
-    <div className={`${className != undefined ? className : ' '} flex items-center flex-col w-fit ${direction == 'center' ? 'mx-auto' : ' '} ${direction == 'right' ? 'ml-auto' : ' '}`}>
+    <div
+    data-aos = "zoom-in"
+    className={`${className != undefined ? className : ' '} flex items-center flex-col w-fit ${direction == 'center' ? 'mx-auto' : ' '} ${direction == 'right' ? 'ml-auto' : ' '}`}>
         <div className='flex items-center justify-center mx-auto w-fit'>
             <img
             className='w-[45px] md:w-[52px] lg:w-[120px]'

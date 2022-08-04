@@ -1,5 +1,6 @@
 import React from 'react'
 import Heading from '../../component/heading/Heading'
+import { motion } from 'framer-motion'
 
 export default function Perkenalan() {
   return (
@@ -10,7 +11,14 @@ export default function Perkenalan() {
         bottom = 'Raja Brawijaya'
         />
         <div className="container mx-auto mt-10 lg:flex lg:items-center lg:mt-20">
-            <img
+            <motion.img
+            animate = {{
+              scale : [0.95,1.05,1]
+            }}
+            transition = {{
+              duration : 5,
+              repeat : Infinity
+            }}
             className='md:w-8/12 mx-auto lg:w-1/2 lg:pr-10'
             src='/assets/images/Maskot.svg'
             />

@@ -4,6 +4,7 @@ import Warna from '../../component/logo/Warna'
 import {Swiper,SwiperSlide,useSwiper} from 'swiper/react'
 import 'swiper/css';
 import Button from '../../component/logo/Button';
+import {motion} from 'framer-motion'
 
 const data = [
     {
@@ -83,8 +84,16 @@ export default function Logo() {
                 />
             </div>
             <div className='mt-10'>
-                <img src={`/assets/logo/icLogo${active}.png`} className='w-48 md:w-64 -mb-10 relative mx-auto' alt="" />
-                <img src="/assets/logo/box.png" className='w-48 md:w-64 mx-auto' alt="" />
+                <motion.img
+                animate={{
+                    y : [0,30,0]
+                }}
+                transition={{
+                    duration : 5,
+                    repeat : Infinity
+                }}
+                src={`/assets/logo/icLogo${active}.png`} className='w-48 md:w-64 lg:w-96 -mb-10 relative mx-auto' alt="" />
+                <img src="/assets/logo/box.png" className='w-48 md:w-64 lg:w-96 mx-auto' alt="" />
             </div>
             <h5 className='text-orange text-center font-agrandir text-xl mb-2 mt-4 lg:text-4xl'>{getData().simbol}</h5>
             <p className='text-center font-poppins mb-14 lg:text-lg lg:w-8/12 lg:mx-auto'>{getData().arti}</p>

@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import style from "./nav.module.css";
 import Navlink from "../../component/navlink/Navlink";
 
-export default function Nav({ bg,onActive}) {
+export default function Nav({ bg,variant}) {
   const [scroll, setScroll] = useState(false);
   const [show, setShow] = useState(false);
   const [active, setActive] = useState("beranda");
@@ -18,21 +18,37 @@ export default function Nav({ bg,onActive}) {
   //     }
   //   };
   // });
+  const [onActive,setNav] = useState(false);
+
+  useEffect(()=>{
+    window.onscroll = () =>{
+      // console.log(window.scrollY);
+      if(window.scrollY >= 2){
+        setNav(true);
+      }else{
+        setNav(false);
+      }
+    };
+  })
+
   useEffect(()=>{
     console.log(onActive);
   })
 
   return (
     <nav
-      className={`transition-all duration-500 fixed w-full py-2 top-0 z-50 
-      ${onActive ? "bg-blue" : "bg-trans"} ${show ? "bg-grey" : " "}`}
+      className={`transition-all duration-500 fixed w-full py-2 top-0 z-50
+      ${variant == 'blue' ?  'bg-blue' : ' '}
+      ${onActive ? " " : "bg-trans"}
+      ${variant == 'white' ? 'bg-white' : ' '} 
+      ${show ? "bg-grey" : " "}`}
     >
       <div className="container mx-auto flex items-center justify-between">
         {/* left */}
         <div className="flex justify-between items-center w-full lg:w-fit">
           <div className={`${style.logo}`}>
             <Image
-              src={"/assets/logo.png"}
+              src={`/assets/${variant == 'white' && !show ? 'logoDark' : 'logo'}.png`}
               layout="responsive"
               objectFit="cover"
               objectPosition="center"
@@ -55,7 +71,7 @@ export default function Nav({ bg,onActive}) {
             {!show && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="fill-white opacity-50"
+                className={` opacity-50 ${variant == 'white' ? 'fill-blue' : 'fill-white'}`}
                 viewBox="0 0 448 512"
               >
                 <path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
@@ -79,15 +95,15 @@ export default function Nav({ bg,onActive}) {
             show ? "left-20 right-0" : "left-full -right-10"
           } px-8 bg-grey lg:bg-trans top-[80px] md:top-[90px] transition-all duration-500`}
         >
-          <Navlink To={"/"}>Beranda</Navlink>
-          <Navlink To={"/adhikara"}>Adicitta Info</Navlink>
-          <Navlink To={"/peta_brawijaya"}>Peta Brawijaya</Navlink>
-          <Navlink To={"/faq"}>FAQ</Navlink>
+          <Navlink variant={variant} show={show} To={"/"}>Beranda</Navlink>
+          <Navlink variant={variant} show={show} To={"/adhikara"}>Adicitta Info</Navlink>
+          <Navlink variant={variant} show={show} To={"/peta_brawijaya"}>Peta Brawijaya</Navlink>
+          <Navlink variant={variant} show={show} To={"/faq"}>FAQ</Navlink>
           <Link href={"/apps"}>
             {/* <div className='lg:hidden font-poppins py-2 px-4 bg-yellow font-semibold rounded-lg text-white mt-4'>
 							Raja Apps
 						</div> */}
-            <button className="lg:hidden bg-yellow bg-trans border-2 border-white text-white py-2 px-4 normal-case font-agrandir rounded-lg">
+            <button className={`lg:hidden bg-yellow bg-trans border-2  ${variant == 'white' && !show   ? 'text-blue border-blue' : 'text-white border-white'} py-2 px-4 normal-case font-agrandir rounded-lg`}>
               Raja Apps
             </button>
           </Link>
@@ -98,7 +114,7 @@ export default function Nav({ bg,onActive}) {
             {/* <a className='lg:block hidden font-poppins py-2 px-4 bg-yellow font-semibold rounded-lg text-white'>
 							Raja Apps
 						</a> */}
-            <button className="hidden lg:block bg-trans border-2 border-white text-white py-2 px-4 normal-case font-agrandir rounded-lg">
+            <button className={`hidden lg:block bg-trans border-2 ${variant == 'white' ? 'text-blue border-blue' : 'text-white border-white'} py-2 px-4 normal-case font-agrandir rounded-lg`}>
               Raja Apps
             </button>
           </Link>

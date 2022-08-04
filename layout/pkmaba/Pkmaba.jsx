@@ -86,6 +86,7 @@ export default function Pkmaba() {
             }}
             data={dataPk}
             active={getData().fakultas}/>
+
         </div>
     </div>
   )

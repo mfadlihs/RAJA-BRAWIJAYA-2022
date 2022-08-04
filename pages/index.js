@@ -11,25 +11,12 @@ import Head from "next/head";
 import Footer from "../layout/footer/Footer";
 
 export default function Home() {
-
-  const [nav,setNav] = useState(false);
-
-  useEffect(()=>{
-    window.onscroll = () =>{
-      // console.log(window.scrollY);
-      if(window.scrollY >= 50){
-        setNav(true);
-      }else{
-        setNav(false);
-      }
-    };
-  })
   return (
     <div>
       <Head>
         <title>Raja Brawijaya 2022</title>
       </Head>
-      <Nav onActive={nav}/>
+      <Nav variant="blue"/>
       <Jumbotron />
       <Perkenalan />
       <Adicitta />

@@ -1,0 +1,40 @@
+.icSearch{
+    width : 20px;
+}
+
+.hideScroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+.hideScroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    /* border-bottom : 2px solid rgba(246, 149, 52, .5);
+    height : fit-content; */
+}
+
+.shadowInset{
+    display :  flex;
+    height : 430px;
+    box-shadow : inset 0px 0px 10px #00000055;
+}
+
+.box::-webkit-scrollbar{
+    width : 3px;
+}
+.box::-webkit-scrollbar-thumb{
+    background : #F69534;
+    border-radius : 3px;
+}
+
+@media only screen and (min-width: 767.8px) {
+    .shadowInset{
+        height : 40vh;
+    }
+}
+
+@media only screen and (min-width: 991.8px) {
+    .shadowInset{
+        height : 50vh;
+    }
+}

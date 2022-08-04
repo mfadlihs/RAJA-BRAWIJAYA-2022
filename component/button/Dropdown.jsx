@@ -1,16 +1,17 @@
 import React,{useState} from 'react'
+import style from './style.module.css'
 
 export default function Dropdown({data,setActive,active}) {
     const [drop,setDrop] = useState(false);
     const [search,setSearch] = useState('');
   return (
     <div>
-        <div className='w-[320px] mx-auto'>
+        <div className='md:w-[380px] w-[350px] mx-auto text-sm md:text-base'>
             <button
             onClick={()=>{
                 setDrop(!drop);
             }}
-            className='flex items-center py-3 px-4 mx-auto mt-8 w-full justify-between bg-blue text-white rounded-lg'>
+            className='flex items-center py-3 px-4 mx-auto  mt-8 font-poppins w-full justify-between bg-blue text-white rounded-lg'>
                 <p>{active}</p>
                 <img src='/assets/icons/arrdown.svg' width={20} className="mt-1"/>
             </button>
@@ -22,7 +23,7 @@ export default function Dropdown({data,setActive,active}) {
                         setSearch(e.target.value);
                     }} className=' ml-2 focus-visible:outline-none w-full' />
                 </div>
-                <div className={`h-[150px] text-white py-4 overflow-x-scroll `}>
+                <div className={`h-[150px] text-white py-5 overflow-y-scroll ${style.scroll}`}>
                     {data.filter((e)=>{
                         if(search != ''){
                             return e.fakultas.toLowerCase().match(search.toLowerCase());
