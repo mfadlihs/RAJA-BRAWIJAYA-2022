@@ -5,7 +5,7 @@ import Groupfaq from "../component/faq/Groupfaq";
 import Dropfaq from "../component/faq/Dropfaq";
 
 import axios from "axios";
-import Loading from "../component/loading";
+// import Loading from "../component/loading";
 
 const questData = [
     {
