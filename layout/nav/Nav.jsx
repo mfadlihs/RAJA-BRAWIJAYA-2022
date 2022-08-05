@@ -41,7 +41,7 @@ export default function Nav({ bg, variant }) {
 				className={`transition-all duration-500 fixed w-full py-2 top-0 z-50
       ${variant == "blue" ? "bg-blue" : " "}
       ${onActive ? " " : "bg-trans"}
-      ${variant == "white" ? "bg-transparent" : " "} 
+      ${variant == "white" ? "bg-white" : " "} 
       ${show ? "bg-grey" : " "}`}
 			>
 				<div className='container mx-auto flex items-center justify-between'>
