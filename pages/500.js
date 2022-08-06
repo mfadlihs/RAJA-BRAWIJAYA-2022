@@ -4,14 +4,13 @@ import Link from "next/link";
 export default function Custom500() {
   return (
     <div className="w-screen min-h-screen flex justify-center items-center container ">
-      <div className=" w-full h-full absolute overflow-hidden opacity-10 drop-shadow-md">
-        <Image
-          src={Background.CandiHijau}
-          layout="responsive"
-          objectFit="cover"
-          alt="RAJA Brawijaya"
-        />
-      </div>
+      <div
+        className=" w-full h-full absolute overflow-hidden opacity-10 drop-shadow-md"
+        style={{
+          backgroundImage: `url(/assets/images/CandiHijau.png)`,
+          opacity: "0.1",
+        }}
+      ></div>
       <div className="space-y-2">
         <div className=" w-full md:w-[50vw] h-full mx-auto">
           <Image
