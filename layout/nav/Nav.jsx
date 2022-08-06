@@ -129,7 +129,7 @@ export default function Nav({ bg, variant }) {
           </div>
 
           <div>
-            <Link href={"/apps"}>
+            <Link href={"/rajaapps"}>
               {/* <a className='lg:block hidden font-poppins py-2 px-4 bg-yellow font-semibold rounded-lg text-white'>
 							Raja Apps
 						</a> */}

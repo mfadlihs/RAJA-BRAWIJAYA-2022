@@ -5,10 +5,33 @@ import Head from "next/dist/shared/lib/head";
 import AdicittaCard from "../../layout/adcittaInfo/AdicittaCard";
 import HeadingMini from "../../component/heading/HeadingMini";
 import AdicittaCardMini from "../../layout/adcittaInfo/AdicittaCardMini";
+import { apiNews } from "../../lib/api";
+import { useEffect, useState } from "react";
 
 export default function AdiciittaInfo() {
-  const x = "asd<br />asd";
-
+  const [loading, setLoading] = useState(true);
+  const [news, setNews] = useState([]);
+  useEffect(() => {
+    apiNews()
+      .then((res) => {
+        setNews(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+  // date form database to indonesia format
+  const date = (date) => {
+    const dateSplit = date.split("-");
+    const year = dateSplit[0];
+    const month = dateSplit[1];
+    let day = dateSplit[2];
+    day = day.split("T")[0];
+    return `${day}-${month}-${year}`;
+  };
   return (
     <>
       <Head>
@@ -41,58 +64,85 @@ export default function AdiciittaInfo() {
           <div className="container pt-20 ">
             <HeadingMini top={"Adicitta"} bottom=" Baru" />
             <div className="flex lg:flex-row flex-col  lg:space-x-5 h-full items-center pt-5 ">
-              <div className="lg:w-1/2  flex-1 h-full ">
-                <AdicittaCard
-                  title="Twibbon"
-                  descipriton={
-                    " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aperiam libero quos sequi facere ex minus omnis! Ipsam animi illum dolor molestiae magnam est ex provident ducimus reprehenderit asperiores quisquam alias eius, accusantium, consectetur hic laborum assumenda suscipit reiciendis. Assumenda dolorum neque quis itaque doloremque mollitia quibusdam, delectus, obcaecati officia minus eum enim ullam, quidem blanditiis rerum repudiandae sed voluptatum nihil consectetur debitis qui. Impedit aspernatur  ..."
-                  }
-                  slug="twibbon"
-                />
+              <div className="lg:w-1/2   h-full ">
+                {news.length > 0 && (
+                  <AdicittaCard
+                    title={news[0].title}
+                    descipriton={news[0].description}
+                    thumbnail={news[0].thumbnail}
+                    slug={news[0].slug}
+                    tanggal={date(news[0].created_at)}
+                  />
+                )}
               </div>
               <div className="flex-1   md:space-y-2 items-between ">
-                {Array.from({ length: 2 }, (_, i) => (
-                  <div className="flex flex-1 md:space-x-5 md:flex-row flex-col">
-                    <div className="md:w-1/2 md:h-1/2">
-                      <AdicittaCardMini
-                        title="Twibbon"
-                        descipriton={
-                          "lorem ipsum dolor sit amet kas tiua skzmah wqoas... "
-                        }
-                      />
-                    </div>
-                    <div className="md:w-1/2 md:h-1/2">
-                      <AdicittaCardMini
-                        title="Twibbon"
-                        descipriton={
-                          "lorem ipsum dolor sit amet kas tiua skzmah wqoas..."
-                        }
-                      />
-                    </div>
-                  </div>
-                ))}
+                <div className="flex flex-1 md:space-x-5 md:flex-row flex-col ">
+                  {news.map((item, index) => {
+                    if (index > 0 && index < 3) {
+                      return (
+                        <div className="md:w-1/2 md:h-1/2">
+                          <AdicittaCardMini
+                            title={item.title}
+                            descipriton={item.description}
+                            thumbnail={item.thumbnail}
+                            slug={item.slug}
+                            tanggal={date(item.created_at)}
+                          />
+                        </div>
+                      );
+                    }
+                  })}
+                </div>
+                <div className="flex flex-1 md:space-x-5 md:flex-row flex-col ">
+                  {news.map((item, index) => {
+                    if (index > 2 && index < 5) {
+                      return (
+                        <div className="md:w-1/2 md:h-1/2">
+                          <AdicittaCardMini
+                            title={item.title}
+                            descipriton={item.description}
+                            thumbnail={item.thumbnail}
+                            slug={item.slug}
+                            tanggal={date(item.created_at)}
+                          />
+                        </div>
+                      );
+                    }
+                  })}
+                </div>
               </div>
             </div>
           </div>
-          <div className="container pt-20  ">
-            <HeadingMini top={"Adicitta"} bottom=" Lama" />
-            <div className="flex md:flex-row flex-col  md:space-x-5 h-full items-center pt-5 ">
-              <div className="flex-1  md:space-y-2 items-between  justify-between ">
-                {Array.from({ length: 3 }, (_, i) => (
-                  <div className="flex flex-1 md:space-x-5 md:flex-row flex-col justify-between">
-                    {Array.from({ length: 3 }, (_, i) => (
-                      <AdicittaCardMini
-                        title="Twibbon"
-                        descipriton={
-                          "lorem ipsum dolor sit amet kas tiua skzmah wqoas... "
-                        }
-                      />
-                    ))}
+          {news.length > 5 && (
+            <div className="container pt-20  ">
+              <HeadingMini top={"Adicitta"} bottom=" Lama" />
+              <div className="flex md:flex-row flex-col  md:space-x-5 h-full items-center pt-5 ">
+                <div className="flex-1  md:space-y-2 items-between  justify-between ">
+                  <div
+                    className={`flex flex-1 md:flex-row flex-col ${
+                      news % 3 == 0 ? "justify-between" : "justify-start"
+                    }  flex-wrap`}
+                  >
+                    {news.map((item, index) => {
+                      if (index > 4) {
+                        return (
+                          <div className="w-1/3 p-2">
+                            <AdicittaCardMini
+                              title={item.title}
+                              descipriton={item.description}
+                              thumbnail={item.thumbnail}
+                              slug={item.slug}
+                              tanggal={date(item.created_at)}
+                            />
+                          </div>
+                        );
+                      }
+                    })}
                   </div>
-                ))}
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </>

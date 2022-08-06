@@ -4,7 +4,13 @@ import Image from "next/image";
 import { Background, Icons } from "../../constants/Images";
 import Link from "next/link";
 
-export default function AdicittaCard({ tanggal, slug, title, descipriton }) {
+export default function AdicittaCard({
+  tanggal,
+  slug,
+  title,
+  descipriton,
+  thumbnail,
+}) {
   return (
     <div className="p-2 rounded-lg bg-white shadow-sm  cursor-pointer ">
       <Link
@@ -26,7 +32,7 @@ export default function AdicittaCard({ tanggal, slug, title, descipriton }) {
               </div>
               <div className="">
                 <h3 className="text-primary font-semibold"> RAJA Brawijaya</h3>
-                <h3 className="text-yellow text-sm"> 01 Agustus 2022</h3>
+                <h3 className="text-yellow text-sm"> {tanggal} </h3>
               </div>
             </div>
             <div className=" w-8 h-8 bg-yellow rounded-md p-1 ">
@@ -40,18 +46,18 @@ export default function AdicittaCard({ tanggal, slug, title, descipriton }) {
           </div>
           <div className="relative ">
             <div className=" w-full h-full bg-yellow rounded-md ">
-              <Image
-                src={Background.News}
-                layout="responsive"
-                objectFit="cover"
-                alt="RAJA Brawijaya"
-              />
+              <img src={thumbnail} alt="thumbnail" className="w-full h-64" />
             </div>
             <div className="bg-yellow w-full h-0 group-hover:h-full absolute bottom-0 right-0 bg-opacity-30 " />
           </div>
           <div className="px-5 text-primary py-2">
             <h3 className=" font-semibold">{title}</h3>
-            <h5 className="text-sm">{descipriton}</h5>
+            <h5
+              className="text-sm"
+              dangerouslySetInnerHTML={{ __html: descipriton }}
+            >
+              {}
+            </h5>
           </div>
         </div>
       </Link>

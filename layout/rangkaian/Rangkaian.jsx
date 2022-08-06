@@ -14,7 +14,7 @@ export default function Rangkaian() {
           <RangkaianSlide
             img="/assets/images/icPKKMB.png"
             name="PKKMB"
-            date="18 Agustus - 18 Agustus 2020"
+            date="16 Agustus - 19 Agustus 2022"
           >
             PKKMB atau Pengenalan Kehidupan Kampus Baru Mahasiswa Baru
             Universitas Brawijaya merupakan kegiatan penyambutan mahasiswa baru
@@ -27,7 +27,7 @@ export default function Rangkaian() {
           <RangkaianSlide
             img="/assets/images/icOH.png"
             name="Open House"
-            date="18 Agustus - 18 Agustus 2020"
+            date="Coming Soon"
           >
             OH merupakan kegiatan penutup dari rangkaian acara RAJA Brawijaya
             dimana mahasiswa baru dapat mengenal dan memilih LKM atau UKM yang

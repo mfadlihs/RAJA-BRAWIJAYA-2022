@@ -10,7 +10,7 @@ export default function AdicittaCardFull({
   descipriton,
 }) {
   return (
-    <div className="p-5 rounded-lg bg-white shadow-sm cursor-pointer bg-opacity-50 ">
+    <div className="p-5 rounded-lg bg-white shadow-sm cursor-pointer bg-opacity-50 w-full ">
       <div
         className={`rounded-lg bg-white ${style.addicitaCard} pb-5 bg-opacity-30  relative `}
       >
@@ -18,7 +18,7 @@ export default function AdicittaCardFull({
           <div className="bg-green p-5 rounded-lg mb-5 ">
             <h1 className="text-3xl text-white font-semibold  ">{title}</h1>
           </div>
-          <div>{descipriton}</div>
+          <div dangerouslySetInnerHTML={{ __html: descipriton }}></div>
         </div>
         <div className="flex justify-end">
           <div className=" w-1/2 h-auto">
