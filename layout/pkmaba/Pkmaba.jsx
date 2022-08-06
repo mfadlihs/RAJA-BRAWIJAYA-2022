@@ -22,6 +22,7 @@ export default function Pkmaba() {
 				<Pkdata
 					name={getData().name}
 					description={getData().description}
+					img = {getData().img == undefined ? '/assets/UB.png' : getData().img}
 					spotify={getData().spotify}
 					youtube={getData().youtube}
 					tiktok={getData().tiktok}

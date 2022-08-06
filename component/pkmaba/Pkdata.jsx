@@ -3,6 +3,7 @@ import React from "react";
 export default function Pkdata({
 	name,
 	line,
+	img,
 	instagram,
 	twitter,
 	telegram,
@@ -15,7 +16,9 @@ export default function Pkdata({
 		<>
 			<div className='container mx-auto md:flex lg:mt-16'>
 				<div className='pt-10'>
-					<div className='rounded-full h-32 w-32 md:h-56 md:w-56 lg:w-[500px] lg:h-[500px] md:mr-10 lg:mr-14 bg-white mx-auto'></div>
+					<div className='rounded-full h-32 w-32 md:h-56 p-2 md:p-8 lg:p-20 md:w-56 lg:w-[500px] lg:h-[500px] md:mr-10 lg:mr-14 bg-white mx-auto'>
+						<img src={img} className="rounded-full object-cover object-center" alt="" srcset="" />
+					</div>
 				</div>
 				<div>
 					<h2 className='text-grey text-center md:text-start text-4xl lg:text-6xl font-agrandir font-semibold mt-8 md:mt-12'>
