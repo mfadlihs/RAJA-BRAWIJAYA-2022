@@ -4,39 +4,7 @@ import Head from "next/head";
 import { useState } from "react";
 import Dropdown from "../component/peta/Dropdown";
 import Heading from "../component/heading/Heading";
-
-const dataMap = [
-	{
-		id: 1,
-		nama: "Rektorat",
-		deskripsi:
-			"Rektorat Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	},
-	{
-		id: 2,
-		nama: "Fakultas Ilmu Komputer",
-		deskripsi:
-			"FILKOM Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	},
-	{
-		id: 3,
-		nama: "Fakultas Perikanan dan Ilmu Kelautan",
-		deskripsi:
-			"FPIK Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	},
-	{
-		id: 4,
-		nama: "Fakultas Kedokteran",
-		deskripsi:
-			"FK Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	},
-	{
-		id: 5,
-		nama: "Fakultas Teknik",
-		deskripsi:
-			"FT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	},
-];
+import dataMap from "../constants/dataMap";
 
 // console.log(dataMap[0].id);
 
