@@ -125,10 +125,11 @@ export default function Faq() {
       <Head>
         <title>RAJA Brawijaya 2022 | FAQ</title>
       </Head>
-      <div className="bg-white font-poppins pb-8 min-h-screen">
+      <div className="bg-white font-poppins pb-8 min-h-screen relative">
         {/* {loading && <Loading /> } */}
         <Nav variant="white" />
-        <div className="container mx-auto pt-24">
+
+        <div className="container mx-auto pt-24 relative z-3">
           <h1 className="font-agrandir text-blue font-bold text-2xl text-center">
             Halo Abhiseka, ada yang bisa kami bantu?
           </h1>
