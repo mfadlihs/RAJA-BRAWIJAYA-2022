@@ -9,43 +9,43 @@ import { motion } from "framer-motion";
 const data = [
 	{
 		id: "A",
-		simbol: "JAMANG DENGAN 3 MAHKOTA DAN ANGKA 60 DI TENGAH (Icon A)",
-		arti: "Angkatan 60 Universitas Brawijaya yang senantiasa menjunjung tinggi Tri Dharma Perguruan Tinggi (Icon A)",
+		simbol: "MUKA HADAP DEPAN AGAK MIRING",
+		arti: "Lambang kebijakan dan masa depan",
 	},
 	{
 		id: "B",
-		simbol: "JAMANG DENGAN 3 MAHKOTA DAN ANGKA 60 DI TENGAH (Icon B)",
-		arti: "Angkatan 60 Universitas Brawijaya yang senantiasa menjunjung tinggi Tri Dharma Perguruan Tinggi (Icon B)",
+		simbol: "IKON ATOM",
+		arti: "Merepresentasikan Cendekiawan",
 	},
 	{
 		id: "C",
-		simbol: "JAMANG DENGAN 3 MAHKOTA DAN ANGKA 60 DI TENGAH (Icon C)",
-		arti: "Angkatan 60 Universitas Brawijaya yang senantiasa menjunjung tinggi Tri Dharma Perguruan Tinggi (Icon C)",
+		simbol: "SUMPING TELINGA BERBENTUK SAYAP",
+		arti: "Melambangkan mereka berpendapat.",
 	},
 	{
 		id: "D",
-		simbol: "JAMANG DENGAN 3 MAHKOTA DAN ANGKA 60 DI TENGAH (Icon D)",
-		arti: "Angkatan 60 Universitas Brawijaya yang senantiasa menjunjung tinggi Tri Dharma Perguruan Tinggi (Icon D)",
+		simbol: "TIGA BINTANG",
+		arti: "Tri Dharma Perguruan Tinggi",
 	},
 	{
 		id: "E",
-		simbol: "JAMANG DENGAN 3 MAHKOTA DAN ANGKA 60 DI TENGAH (Icon E)",
-		arti: "Angkatan 60 Universitas Brawijaya yang senantiasa menjunjung tinggi Tri Dharma Perguruan Tinggi (Icon E)",
+		simbol: "MAHKOTA RADEN WIJAYA",
+		arti: "Raden Wijaya sebagai tokoh yang terdapat dalam lambang Universitas Brawijaya",
 	},
 	{
 		id: "F",
-		simbol: "JAMANG DENGAN 3 MAHKOTA DAN ANGKA 60 DI TENGAH (Icon F)",
-		arti: "Angkatan 60 Universitas Brawijaya yang senantiasa menjunjung tinggi Tri Dharma Perguruan Tinggi (Icon F)",
+		simbol: "TONGKAT JENDRAL",
+		arti: "Melambangkan kebijaksanaan",
 	},
 	{
 		id: "G",
-		simbol: "JAMANG DENGAN 3 MAHKOTA DAN ANGKA 60 DI TENGAH (Icon G)",
-		arti: "Angkatan 60 Universitas Brawijaya yang senantiasa menjunjung tinggi Tri Dharma Perguruan Tinggi (Icon G)",
+		simbol: "GELUNG SUPIT URANG",
+		arti: "Melambangkan keluhuran budi dan semagat menggapai cita.",
 	},
 	{
 		id: "H",
-		simbol: "JAMANG DENGAN 3 MAHKOTA DAN ANGKA 60 DI TENGAH (Icon H)",
-		arti: "Angkatan 60 Universitas Brawijaya yang senantiasa menjunjung tinggi Tri Dharma Perguruan Tinggi (Icon H)",
+		simbol: "JAMANG DENGAN 3 MAHKOTA DAN ANGKA 60 DI TENGAH",
+		arti: "Angkatan 60 Universitas Brawijaya yang senantiasa menjunjung tinggi Tri Dharma Perguruan Tinggi",
 	},
 ];
 export default function Logo() {

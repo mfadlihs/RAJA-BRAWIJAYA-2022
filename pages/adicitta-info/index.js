@@ -2,6 +2,7 @@ import { Background, Pattern } from "../../constants/Images";
 import Image from "next/dist/client/image";
 import Nav from "../../layout/nav/Nav";
 import Head from "next/dist/shared/lib/head";
+import AdicittaCard from "../../layout/adcittaInfo/AdicittaCard";
 
 export default function AdiciittaInfo() {
 	const x = "asd<br />asd";
@@ -12,7 +13,7 @@ export default function AdiciittaInfo() {
 				<title>RAJA Brawijaya 2022 | Adiciitta Info</title>
 			</Head>
 
-			<Nav variant={"white"} />
+			<Nav variant='white' />
 
 			<div className='after:candiHijau relative pt-24'>
 				<div>
@@ -35,7 +36,9 @@ export default function AdiciittaInfo() {
 							alt='RAJA Brawijaya'
 						/>
 					</div>
-					<p dangerouslySetInnerHTML={{ __html: x }}></p>
+					<div>
+						<AdicittaCard />
+					</div>
 				</div>
 			</div>
 		</>
