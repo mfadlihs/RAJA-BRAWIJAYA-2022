@@ -10,7 +10,7 @@ export default function ComingSoon() {
   const [menit, setMenit] = useState();
   const [detik, setDetik] = useState();
   useEffect(() => {
-    var countDownDate = new Date("August 8, 2022 00:00:00").getTime();
+    var countDownDate = new Date("August 10, 2022 00:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function () {
@@ -37,7 +37,7 @@ export default function ComingSoon() {
   return (
     <div className="w-screen min-h-screen flex justify-center items-center container ">
       <Head>
-        <title> RAJA Brawijaya | Adicitta 2020</title>
+        <title> RAJA Brawijaya | Adicitta 2021</title>
       </Head>
       <div
         className=" w-full h-full absolute overflow-hidden opacity-10 drop-shadow-md"
@@ -61,8 +61,8 @@ export default function ComingSoon() {
             Segera Datang!
           </h2>
           <h2 className=" text-primary font-agrandir font-extrabold text-base md:text-2xl text-center">
-            Page ini masih dalam tahap pengerjaan. Silahkan kembali lagi nanti
-            ya!
+            Huhuhu :”” sabar ya page ini masih dalam tahap pengerjaan. Datang
+            lagi di lain waktu ya!
           </h2>
           <div className="flex  items-start justify-center bg-white drop-shadow-lg py-5 rounded-xl my-5 space-x-3">
             <div>

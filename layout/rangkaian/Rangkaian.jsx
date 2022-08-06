@@ -5,36 +5,37 @@ import "swiper/css";
 import RangkaianSlide from "../../component/rangkaian/RangkaianSlide";
 
 export default function Rangkaian() {
-	return (
-		<div className='bg-blue py-24'>
-			<Heading topWhite top='Rangkaian' bottom='Utama' direction='center' />
+  return (
+    <div className="bg-blue py-24">
+      <Heading topWhite top="Rangkaian" bottom="Utama" direction="center" />
 
-			<Swiper slidesPerView={1}>
-				<SwiperSlide>
-					<RangkaianSlide
-						img='/assets/images/icPKKMB.png'
-						name='PKKMB'
-						date='18 Agustus - 18 Agustus 2020'
-					>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-						quas ex suscipit earum illo velit molestiae! Id ea illum commodi
-						facere possimus, quod vel porro repellendus unde, iusto architecto
-						minima!
-					</RangkaianSlide>
-				</SwiperSlide>
-				<SwiperSlide>
-					<RangkaianSlide
-						img='/assets/images/icOH.png'
-						name='Open House'
-						date='18 Agustus - 18 Agustus 2020'
-					>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-						quas ex suscipit earum illo velit molestiae! Id ea illum commodi
-						facere possimus, quod vel porro repellendus unde, iusto architecto
-						minima!
-					</RangkaianSlide>
-				</SwiperSlide>
-			</Swiper>
-		</div>
-	);
+      <Swiper slidesPerView={1}>
+        <SwiperSlide>
+          <RangkaianSlide
+            img="/assets/images/icPKKMB.png"
+            name="PKKMB"
+            date="18 Agustus - 18 Agustus 2020"
+          >
+            PKKMB atau Pengenalan Kehidupan Kampus Baru Mahasiswa Baru
+            Universitas Brawijaya merupakan kegiatan penyambutan mahasiswa baru
+            yang bertujuan untuk mengenal lebih dekat Universitas Brawijaya
+            dengan harapan terbentuk rasa cinta dan rasa bangga akan
+            almamaternya.
+          </RangkaianSlide>
+        </SwiperSlide>
+        <SwiperSlide>
+          <RangkaianSlide
+            img="/assets/images/icOH.png"
+            name="Open House"
+            date="18 Agustus - 18 Agustus 2020"
+          >
+            OH merupakan kegiatan penutup dari rangkaian acara RAJA Brawijaya
+            dimana mahasiswa baru dapat mengenal dan memilih LKM atau UKM yang
+            ada di kampus Universitas Brawijaya sesuai dengan bakat serta minat
+            yang dimiliki.
+          </RangkaianSlide>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
 }

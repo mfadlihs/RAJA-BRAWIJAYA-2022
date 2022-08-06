@@ -20,10 +20,11 @@ export default function Perkenalan() {
         />
         <div className="lg:pl-10">
           <p className="text-justify font-poppins text-grey text-sm mt-6 md:text-base lg:text-xl">
-            <span className="text-yellow font-medium">RAJA Brawijaya</span> atau{" "}
-            <span className="text-yellow font-medium">
+            <strong className="text-yellow font-bold">RAJA Brawijaya</strong>{" "}
+            atau{" "}
+            <strong className="text-yellow font-bold">
               Rangkaian Acara Jelajah Almamater Universitas Brawijaya
-            </span>{" "}
+            </strong>{" "}
             merupakan serangkaian kegiatan yang bertujuan untuk memfasilitasi
             mahasiswa baru Universitas Brawijaya untuk mengetahui hal-hal
             terkait kehidupan kampus dimana RAJA Brawijaya terdiri dari tiga

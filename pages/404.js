@@ -27,7 +27,8 @@ export default function Custom404() {
             404
           </h2>
           <h2 className=" text-secondary font-agrandir font-extrabold text-base md:text-2xl text-center">
-            Halaman tidak ditemukan, mau kemana braw? balik ke{" "}
+            Emangnya perasaan kamu doang yang bisa error? Page RAJA Brawijaya
+            juga bisa error. Cek lagi di lain kesempatan ya! balik ke{" "}
             <Link href="/">
               <span className="!text-primary underline cursor-pointer">
                 landing page
