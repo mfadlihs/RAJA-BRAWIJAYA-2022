@@ -27,13 +27,27 @@ export default function Document() {
         />
         <meta property="og:url" content="https://rajabrawijaya.ub.ac.id" />
       </Head>
+      <Script
+        strategy="lazyOnload"
+        src="https://embed.tawk.to/62e72b6254f06e12d88c3a77/1g9bg2v97"
+      />
+      <Script
+        strategy="lazyOnload"
+        src="https://www.googletagmanager.com/gtag/js?id=G-SR9L2P69VH"
+      />
+      <Script
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `(window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-SR9L2P69VH'););`,
+        }}
+      ></Script>
       <body>
         <Main />
         <NextScript />
-        <Script
-          strategy="lazyOnload"
-          src="https://embed.tawk.to/62e72b6254f06e12d88c3a77/1g9bg2v97"
-        />
       </body>
     </Html>
   );
