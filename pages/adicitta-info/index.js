@@ -47,6 +47,7 @@ export default function AdiciittaInfo() {
                   descipriton={
                     " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aperiam libero quos sequi facere ex minus omnis! Ipsam animi illum dolor molestiae magnam est ex provident ducimus reprehenderit asperiores quisquam alias eius, accusantium, consectetur hic laborum assumenda suscipit reiciendis. Assumenda dolorum neque quis itaque doloremque mollitia quibusdam, delectus, obcaecati officia minus eum enim ullam, quidem blanditiis rerum repudiandae sed voluptatum nihil consectetur debitis qui. Impedit aspernatur  ..."
                   }
+                  slug="twibbon"
                 />
               </div>
               <div className="flex-1   md:space-y-2 items-between ">

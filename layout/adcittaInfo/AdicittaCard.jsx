@@ -2,11 +2,15 @@ import style from "./style.module.css";
 import { SendOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import { Background, Icons } from "../../constants/Images";
+import Link from "next/link";
 
 export default function AdicittaCard({ tanggal, slug, title, descipriton }) {
   return (
-    <div className="p-2 rounded-lg bg-white shadow-sm ">
-      <div className={`rounded-lg bg-white ${style.addicitaCard} pb-5 group`}>
+    <div className="p-2 rounded-lg bg-white shadow-sm  cursor-pointer ">
+      <Link
+        className={`rounded-lg bg-white ${style.addicitaCard} pb-5 group`}
+        href={slug ? `/adicitta-info/${slug}` : "/adicitta-info"}
+      >
         <div className="flex flex-col">
           <div className="flex justify-between items-center w-full  px-5 pt-1">
             <div className="flex items-center drop-shadow-md">
@@ -50,7 +54,7 @@ export default function AdicittaCard({ tanggal, slug, title, descipriton }) {
             <h5 className="text-sm">{descipriton}</h5>
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 export const Background = {
   CandiHijau: require("../public/assets/images/CandiHijau.png"),
   News: require("../public/assets/images/News.png"),
+  Feather: require("../public/assets/images/Feather.png"),
 };
 export const Pattern = {
   HeadingFull: require("../public/assets/images/HeadingFull.svg"),

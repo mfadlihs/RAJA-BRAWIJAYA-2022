@@ -10,7 +10,7 @@ export default function AdicittaCardMini({
   descipriton,
 }) {
   return (
-    <div className="p-2 rounded-lg bg-white shadow-sm ">
+    <div className="p-2 rounded-lg bg-white shadow-sm cursor-pointer ">
       <div className={`rounded-lg bg-white ${style.addicitaCard} pb-5 group`}>
         <div className="flex flex-col">
           <div className="flex justify-between items-center w-full  px-5 py-1">
