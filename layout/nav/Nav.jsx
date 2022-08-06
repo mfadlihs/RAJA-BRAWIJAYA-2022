@@ -42,7 +42,8 @@ export default function Nav({ bg, variant }) {
       ${variant == "blue" ? "bg-blue" : " "}
       ${onActive ? " " : "bg-trans"}
       ${variant == "white" ? "bg-transparent" : " "} 
-      ${show ? "bg-grey" : " "}`}
+      ${show ? "bg-grey" : " "}
+      `}
 			>
 				<div className='container mx-auto flex items-center justify-between'>
 					{/* left */}
@@ -103,7 +104,7 @@ export default function Nav({ bg, variant }) {
 						<Navlink variant={variant} show={show} To={"/"}>
 							Beranda
 						</Navlink>
-						<Navlink variant={variant} show={show} To={"/adicitta"}>
+						<Navlink variant={variant} show={show} To={"/adicitta-info"}>
 							Adicitta Info
 						</Navlink>
 						<Navlink variant={variant} show={show} To={"/peta_brawijaya"}>
