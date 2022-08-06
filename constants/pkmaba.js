@@ -17,6 +17,7 @@ const dataPk = [
 		id: "PK2MABA FK_ID",
 		name: "PK2MABA FK",
 		fakultas: "Fakultas Kedokteran",
+		img : '/assets/fakultas/FK.png',
 		description:
 			"PK2MABA FK Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium numquam inventore excepturi repudiandae dolores voluptates illo quas hic accusantium amet.",
 		spotify: "spotify/pk2mabaFK",
@@ -44,6 +45,7 @@ const dataPk = [
 	{
 		id: "PK2MABA FKH",
 		name: "PKKMB FKH",
+		img : '/assets/fakultas/FKH.png',
 		fakultas: "Fakultas Kedokteran Hewan",
 		description:
 			"PKKMB (Pengenalan Kehidupan Kampus bagi Mahasiswa Baru) FKH merupakan sebuah sarana bagi mahasiswa baru dalam meningkatkan peran civitas akademika Fakultas Kedokteran Hewan Universitas Brawijaya dalam melaksanakan fungsi sebagai Tri Dharma Perguruan Tinggi yaitu Pendidikan, Penelitian, dan Pengabdian Masyarakat. Acara PKKMB ini terdiri dari dua rangkaian besar, yaitu PKKMB (Pengenalan Kehidupan Kampus bagi Mahasiswa Baru) dan KRIMA (Krida Mahasiswa). Adapun tujuan diadakannya kegiatan PKKMB membentukmahasiswa Kedokteran Hewan yang berkarakter, tangguh, beretika dan jujur berdasarkan nilai-nilai moral kemanusiaan dan prinsip 7 Pilar Kolegium Mahasiswa Kedokteran Hewan Universitas Brawijaya yaitu Religius, Moralis, Intelek, Profesional, Kepemimpinan, Prestatif, dan Kolegalitas",
@@ -105,6 +107,7 @@ const dataPk = [
 		id: "PK2MABA FKG",
 		name: "PROBINMABA FKG",
 		fakultas: "Fakultas Kedokteran Gigi",
+		img : '/assets/fakultas/FKG.png',
 		description:
 			"PROBINMABA merupakan sebuah rangkaian kegiatan kaderisasi dari Kementrian Pengembangan Sumber Daya Manusia yang ditujukan untuk pengenalan dan orientasi yang diadakan oleh FKG UB. Kegiatan ini memiliki tujuan memperkenalkan kepada mahasiswa baru FKG UB tentang kehidupan kampus dan mempersiapkan mahasiswa baru FKG UB 2022 untuk menjadi penerus KM FKG UB berdasarkan 6 nilai KM. Rangkaian PROBINMABA FKG UB 2022 terdiri dari dua rangkaian utama, yaitu PK2Maba yang bertujuan untuk memperkenalkan seluruh jajaran civitas akademik dan PK2M yang bertujuan untuk mengembangkan karakter mahasiswa baru supaya dapat menerapkan serta mengimplementasikan 6 nilai KM FKG.",
 		// null data
