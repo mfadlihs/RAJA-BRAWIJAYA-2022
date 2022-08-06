@@ -42,8 +42,7 @@ export default function Nav({ bg, variant }) {
       ${variant == "blue" ? "bg-blue" : " "}
       ${onActive ? " " : "bg-trans"}
       ${variant == "white" ? "bg-transparent" : " "} 
-      ${show ? "bg-grey" : " "}
-      `}
+      ${show ? "bg-grey" : " "}`}
 			>
 				<div className='container mx-auto flex items-center justify-between'>
 					{/* left */}
