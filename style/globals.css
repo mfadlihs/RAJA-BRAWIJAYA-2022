@@ -4,82 +4,82 @@
 /* html,
 /* Import Font */
 @layer base {
-  ol {
-    @apply list-decimal;
-  }
-  :root {
-  }
-  div {
-    @apply transition-all duration-500 ease-in-out;
-  }
-  .container {
-    @apply max-w-screen-xl mx-auto;
-  }
-  @font-face {
-    font-family: "BataviaGlamore";
-    font-style: normal;
-    font-weight: 400;
-    src: local(""),
-      url(/assets/fonts/BataviaGlamore/GLAMOREREGULAR.woff2) format("woff2");
-  }
-  @font-face {
-    font-family: "poppins";
-    font-style: normal;
-    font-weight: 400;
-    src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
-  }
-  @font-face {
-    font-family: "poppins";
-    font-style: normal;
-    font-weight: 500;
-    src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
-  }
-  @font-face {
-    font-family: "poppins";
-    font-style: normal;
-    font-weight: 600;
-    src: url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
-  }
-  @font-face {
-    font-family: "poppins";
-    font-style: normal;
-    font-weight: 700;
-    src: url(/assets/fonts/Poppins/Poppins-Bold.ttf);
-  }
-  @font-face {
-    font-family: "droid";
-    font-style: normal;
-    font-weight: 400;
-    src: url(/assets/fonts/Droid/DroidSerif.ttf);
-  }
-  @font-face {
-    font-family: "droid";
-    font-style: italic;
-    font-weight: 700;
-    src: url(/assets/fonts/Droid/DroidSerif-BoldItalic.ttf);
-  }
-  @font-face {
-    font-family: "droid";
-    font-style: normal;
-    font-weight: 700;
-    src: url(/assets/fonts/Droid/DroidSerif-Bold.ttf);
-  }
-  @font-face {
-    font-family: "agrandir";
-    font-style: normal;
-    font-weight: 400;
-    src: url(/assets/fonts/Agrandir/Agrandir-Regular.otf);
-  }
-  @font-face {
-    font-family: "agrandir";
-    font-style: normal;
-    font-weight: 700;
-    src: url(/assets/fonts/Agrandir/Agrandir-TextBold.otf);
-  }
-  .candiHijau {
-    @apply bg-CandiHijau inset-0 bg-contain -z-10 absolute overflow-hidden opacity-5 drop-shadow-md content-['*'];
-  }
-  /* h1 {
+	ol {
+		@apply list-decimal;
+	}
+	:root {
+	}
+	div {
+		@apply transition-all duration-500 ease-in-out;
+	}
+	.container {
+		@apply max-w-screen-xl mx-auto;
+	}
+	@font-face {
+		font-family: "BataviaGlamore";
+		font-style: normal;
+		font-weight: 400;
+		src: local(""),
+			url(/assets/fonts/BataviaGlamore/GLAMOREREGULAR.woff2) format("woff2");
+	}
+	@font-face {
+		font-family: "poppins";
+		font-style: normal;
+		font-weight: 400;
+		src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
+	}
+	@font-face {
+		font-family: "poppins";
+		font-style: normal;
+		font-weight: 500;
+		src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
+	}
+	@font-face {
+		font-family: "poppins";
+		font-style: normal;
+		font-weight: 600;
+		src: url(/assets/fonts/Poppins/Poppins-SemiBold.ttf);
+	}
+	@font-face {
+		font-family: "poppins";
+		font-style: normal;
+		font-weight: 700;
+		src: url(/assets/fonts/Poppins/Poppins-Bold.ttf);
+	}
+	@font-face {
+		font-family: "droid";
+		font-style: normal;
+		font-weight: 400;
+		src: url(/assets/fonts/Droid/DroidSerif.ttf);
+	}
+	@font-face {
+		font-family: "droid";
+		font-style: italic;
+		font-weight: 700;
+		src: url(/assets/fonts/Droid/DroidSerif-BoldItalic.ttf);
+	}
+	@font-face {
+		font-family: "droid";
+		font-style: normal;
+		font-weight: 700;
+		src: url(/assets/fonts/Droid/DroidSerif-Bold.ttf);
+	}
+	@font-face {
+		font-family: "agrandir";
+		font-style: normal;
+		font-weight: 400;
+		src: url(/assets/fonts/Agrandir/Agrandir-Regular.otf);
+	}
+	@font-face {
+		font-family: "agrandir";
+		font-style: normal;
+		font-weight: 700;
+		src: url(/assets/fonts/Agrandir/Agrandir-TextBold.otf);
+	}
+	.candiHijau {
+		@apply bg-CandiHijau inset-0 bg-contain -z-10 absolute overflow-hidden opacity-10 drop-shadow-md content-['*'];
+	}
+	/* h1 {
 		@apply lg:text-h1 
     font-droid 
     md:text-h1-md 

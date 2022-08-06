@@ -1,33 +1,25 @@
-import React, { useEffect } from 'react'
-import Nav from '../layout/nav/Nav'
+import React, { useEffect, useState } from "react";
+import Nav from "../layout/nav/Nav";
+import Image from "next/image";
+import { Pattern } from "../constants/Images";
+import Gallery from "../layout/galeri/Gallery";
+import Splash from "../layout/galeri/Splash";
 
-export default function galeri() {
-    useEffect(()=>{
-        console.log("ready")
-    })
-  return (
-    <>
-        <Nav variant={'white'}/>
-        <div className='flex justify-center gap-3'>
-            <div className='flex flex-col'>
-                <div className='h-96 w-52 my-3 bg-black'></div>
-                <div className='h-96 w-52 my-3 bg-black'></div>
-                <div className='h-96 w-52 my-3 bg-black'></div>
-                <div className='h-96 w-52 my-3 bg-black'></div>
-                <div className='h-96 w-52 my-3 bg-black'></div>
-                <div className='h-96 w-52 my-3 bg-black'></div>
-                <div className='h-96 w-52 my-3 bg-black'></div>
-            </div>
-            <div className='flex flex-col'>
-                <div className='h-96 w-52 my-3 bg-blue'></div>
-                <div className='h-96 w-52 my-3 bg-blue'></div>
-                <div className='h-96 w-52 my-3 bg-blue'></div>
-                <div className='h-96 w-52 my-3 bg-blue'></div>
-                <div className='h-96 w-52 my-3 bg-blue'></div>
-                <div className='h-96 w-52 my-3 bg-blue'></div>
-                <div className='h-96 w-52 my-3 bg-blue'></div>
-            </div>
-        </div>
-    </>
-  )
+export default function GalleryPage() {
+	const [isContent, setIsContent] = useState(false);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setIsContent(true);
+		}, 5000);
+	}, []);
+
+	return (
+		<>
+			<Nav variant={"white"} />
+			<div className='after:candiHijau'>
+				{isContent ? <Gallery /> : <Splash />}
+			</div>
+		</>
+	);
 }
