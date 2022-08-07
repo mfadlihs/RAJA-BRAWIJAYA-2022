@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
+import { useEffect, useRef } from "react";
 export default function Document() {
 	return (
 		<Html>
@@ -29,7 +30,6 @@ export default function Document() {
 			</Head>
 			<body>
 				<Main />
-				<audio autoPlay hidden src='/assets/sound/jingle.mp3'></audio>
 
 				<NextScript />
 				<Script

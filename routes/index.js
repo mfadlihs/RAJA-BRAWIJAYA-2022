@@ -6,7 +6,7 @@ import Sekilas from "../layout/sekilas/Sekilas";
 import Rangkaian from "../layout/rangkaian/Rangkaian";
 import Pkmaba from "../layout/pkmaba/Pkmaba";
 import Logo from "../layout/logo/Logo";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Head from "next/head";
 import Footer from "../layout/footer/Footer";
 
