@@ -1,0 +1,36 @@
+.text::before {
+	content: "";
+	height: 6px;
+	border-radius: 4px;
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	transform: translateY(5px);
+	background: #f69534;
+	transition: ease-in 0.3s;
+	left: 12.5%;
+}
+.text:hover::before {
+	width: 75%;
+}
+
+.active::before {
+	width: 75%;
+}
+
+.active:hover::before {
+	width: 75%;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50%);
+	}
+}
+
+.slideTrack {
+	animation: scroll 10s linear infinite;
+}

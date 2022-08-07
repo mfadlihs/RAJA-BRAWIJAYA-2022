@@ -1,0 +1,25 @@
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50%);
+	}
+}
+
+@keyframes scrollReverse {
+	0% {
+		transform: translateY(-50%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.slideTrack {
+	animation: scroll 5s linear infinite;
+}
+
+.slideTrackReverse {
+	animation: scrollReverse 5s linear infinite;
+}
