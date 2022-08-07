@@ -54,7 +54,7 @@ const data = [
 	},
 ];
 export default function Logo() {
-	const [active, setActive] = useState("A");
+	const [active, setActive] = useState("Full");
 
 	useEffect(() => {}, []);
 
