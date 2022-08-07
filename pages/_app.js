@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
 				ref={musicRef}
 				autoPlay
 				hidden
+				loop
 				src='/assets/sound/jingle.mp3'
 			></audio>
 			<Component {...pageProps} />
