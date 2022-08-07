@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import Button from "../../component/logo/Button";
 import { motion } from "framer-motion";
+import { Pagination, Navigation } from "swiper";
 
 const data = [
 	{
@@ -59,7 +60,7 @@ export default function Logo() {
 		})[0];
 	};
 	return (
-		<div className='py-24'>
+		<div className='py-24' id='logo'>
 			<Heading
 				direction={"center"}
 				top='Filosofi'
@@ -98,6 +99,10 @@ export default function Logo() {
 					{getData().arti}
 				</p>
 				<Swiper
+					modules={[Pagination]}
+					pagination={{
+						type: "progressbar",
+					}}
 					breakpoints={{
 						0: {
 							slidesPerView: 4,
@@ -120,6 +125,7 @@ export default function Logo() {
 							</SwiperSlide>
 						);
 					})}
+					<div className='mb-4' />
 				</Swiper>
 			</div>
 		</div>

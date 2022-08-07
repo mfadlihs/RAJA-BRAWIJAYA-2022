@@ -1,12 +1,33 @@
-.swiper-pagination-progressbar{
-    background : white !important;
+.swiper-pagination-progressbar {
+	background: white !important;
 }
 
-.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
-    background : #FE6722 !important;
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background: #fe6722 !important;
 }
 
-.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
-    top : unset !important;
-    bottom : 40px !important;
+.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical
+	> .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+	top: unset !important;
+	bottom: 40px !important;
+}
+
+#logo .swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical
+	> .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+	top: unset !important;
+	bottom: 0px !important;
+}
+
+#logo .swiper-pagination-progressbar {
+	background: white !important;
+}
+
+#logo .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background: #fe6722 !important;
 }
