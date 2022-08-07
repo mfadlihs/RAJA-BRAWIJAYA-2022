@@ -75,14 +75,14 @@ export default function Logo() {
 				<div className='mt-10'>
 					<motion.img
 						animate={{
-							y: [0, 30, 0],
+							y: [0, -20, 0],
 						}}
 						transition={{
 							duration: 5,
 							repeat: Infinity,
 						}}
 						src={`/assets/logo/icLogo${active}.png`}
-						className='w-48 md:w-64 lg:w-96 -mb-10 relative mx-auto'
+						className='w-48 md:w-64 lg:w-96 -mb-10 md:-mb-14 lg:-mb-20 relative mx-auto'
 						alt=''
 					/>
 					<img
