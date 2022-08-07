@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../../component/heading/Heading";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Navigation, Keyboard } from "swiper";
 import "swiper/css";
 import RangkaianSlide from "../../component/rangkaian/RangkaianSlide";
 
@@ -9,7 +10,15 @@ export default function Rangkaian() {
     <div className="bg-blue py-24">
       <Heading topWhite top="Rangkaian" bottom="Utama" direction="center" />
 
-      <Swiper slidesPerView={1}>
+      <Swiper
+      className="relative"
+      modules={[Navigation]}
+      navigation={{
+        nextEl : ".custom-rangkaian-next",
+        prevEl : ".custom-rangkaian-prev"
+      }}
+      keyboard
+      slidesPerView={1}>
         <SwiperSlide>
           <RangkaianSlide
             img="/assets/images/icPKKMB.png"
@@ -35,6 +44,10 @@ export default function Rangkaian() {
             yang dimiliki.
           </RangkaianSlide>
         </SwiperSlide>
+        <div className="flex justify-center container mt-6 md:mt-3 md:mb-10">
+          <button className=" text-white text-4xl mx-4 custom-rangkaian-prev"> &larr; </button>
+          <button className=" text-white text-4xl mx-4 custom-rangkaian-next">&rarr;</button>
+        </div>
       </Swiper>
     </div>
   );
