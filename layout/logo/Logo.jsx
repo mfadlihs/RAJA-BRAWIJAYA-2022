@@ -9,6 +9,10 @@ import { Pagination, Navigation } from "swiper";
 
 const data = [
 	{
+		id: "Full",
+		simbol: "LOGO RAJA BRAWIJAYA 2022",
+	},
+	{
 		id: "A",
 		simbol: "MUKA HADAP DEPAN AGAK MIRING",
 		arti: "Lambang kebijakan dan masa depan",
@@ -98,35 +102,66 @@ export default function Logo() {
 				<p className='text-center font-poppins mb-14 lg:text-lg lg:w-8/12 lg:mx-auto'>
 					{getData().arti}
 				</p>
-				<Swiper
-					modules={[Pagination]}
-					pagination={{
-						type: "progressbar",
-					}}
-					breakpoints={{
-						0: {
-							slidesPerView: 4,
-						},
-						767.8: {
-							slidesPerView: 8,
-						},
-					}}
-				>
-					{data.map(e => {
-						return (
-							<SwiperSlide key={e.id}>
-								<Button
-									img={e.id}
-									active={active}
-									setActive={e => {
-										setActive(e);
-									}}
-								/>
-							</SwiperSlide>
-						);
-					})}
-					<div className='mb-4' />
-				</Swiper>
+				<div className='flex'>
+					{/* <button
+						className='w-14 h-14 md:w-16 lg:w-24 md:h-16 lg:h-24 border-yellow border-2 rounded-lg p-1 md:p-2 lg:p-3 block mx-auto'
+						onClick={() => {
+							setActive("Full");
+						}}
+					>
+						<div
+							className={`w-full h-full rounded-md ${
+								active == "Full" ? "bg-yellow" : "bg-transparent"
+							}`}
+						>
+							<img src={`/assets/logo/icLogoFull.png`} alt='' />
+						</div> */}
+					{/* 
+              <button
+			onClick={() => {
+				setActive(img);
+			}}
+			className='w-14 h-14 md:w-16 lg:w-24 md:h-16 lg:h-24 border-yellow border-2 rounded-lg p-1 md:p-2 lg:p-3 block mx-auto'
+		>
+			<div
+				className={`w-full h-full rounded-md ${
+					active == img ? "bg-yellow" : "bg-transparent"
+				}`}
+			>
+				<img src={`/assets/logo/icLogo${img}.png`} alt='' />
+			</div>
+		</button> */}
+					{/* </button> */}
+					<Swiper
+						modules={[Pagination]}
+						pagination={{
+							type: "progressbar",
+						}}
+						breakpoints={{
+							0: {
+								slidesPerView: 4,
+							},
+							767.8: {
+								slidesPerView: 8,
+							},
+						}}
+					>
+						{data.map(e => {
+							return (
+								<SwiperSlide key={e.id}>
+									<Button
+										img={e.id}
+										active={active}
+										setActive={e => {
+											setActive(e);
+										}}
+									/>
+								</SwiperSlide>
+							);
+						})}
+						<div className='mb-4' />
+					</Swiper>
+				</div>
 			</div>
 		</div>
 	);

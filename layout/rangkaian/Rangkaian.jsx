@@ -45,10 +45,10 @@ export default function Rangkaian() {
 						yang dimiliki.
 					</RangkaianSlide>
 				</SwiperSlide>
-				<div className='absolute top-[25%] text-white text-4xl mx-4 z-50 custom-rangkaian-prev'>
+				<div className='absolute top-[25%] left-0 sm:left-1 md:left-2 scale-75 hover:cursor-pointer sm:scale-100 text-white text-4xl mx-4 z-50 custom-rangkaian-prev'>
 					<img src='/assets/images/kanan.png' className='rotate-180' />
 				</div>
-				<div className='absolute top-[25%] right-0 text-white text-4xl z-50 mx-4 custom-rangkaian-next'>
+				<div className='absolute top-[25%] right-0 sm:right-1 md:right-2 scale-75 hover:cursor-pointer sm:scale-100 text-white text-4xl z-50 mx-4 custom-rangkaian-next'>
 					<img src='/assets/images/kanan.png' />
 				</div>
 				{/* <div className='custom-rangkaian-next w-8 h-8 bg-yellow'></div>
