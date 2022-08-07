@@ -79,6 +79,9 @@
 	.candiHijau {
 		@apply bg-CandiHijau inset-0 bg-contain -z-10 absolute overflow-hidden opacity-10 drop-shadow-md content-['*'];
 	}
+	body {
+		@apply bg-white;
+	}
 	/* h1 {
 		@apply lg:text-h1 
     font-droid 
