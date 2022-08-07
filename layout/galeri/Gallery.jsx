@@ -5,6 +5,7 @@ import Image from "next/dist/client/image";
 import Item from "./Item";
 import GallerySlider from "../../component/galeri/GallarySlider";
 import { Pattern } from "../../constants/Images";
+import GallerySliderMb from "../../component/galeri/GallerySliderMb";
 
 export default function Gallery() {
 	const [isVideo, setIsVideo] = useState(true);
@@ -32,8 +33,8 @@ export default function Gallery() {
 					/>
 				</div>
 			</div>
-			<div className='md:flex block h-screen w-screen overflow-hidden px-24'>
-				<div className='flex flex-col justify-between md:h-full md:py-16 '>
+			<div className='md:flex block h-screen w-screen overflow-hidden md:px-24'>
+				<div className='flex flex-col justify-between md:h-full md:py-16 mb-24 md:mb-0 '>
 					<div className='flex justify-center grow md:items-center'>
 						<div className='flex items-center gap-5'>
 							<Item active={isVideo} setIsVideo={setIsVideo} video={true}>
@@ -53,9 +54,16 @@ export default function Gallery() {
 				</div>
 				<div className='grow'>
 					<div className='h-full overflow-hidden'>
-						<div className='w-fit space-x-20 mx-auto'>
-							<GallerySlider />
-							<GallerySlider reverse />
+						<div className=''>
+							<div className='w-fit space-x-20 mx-auto hidden md:block'>
+								<GallerySlider />
+								<GallerySlider reverse />
+							</div>
+							<div className='w-fit space-y-20 mx-auto md:hidden'>
+								<GallerySliderMb />
+								<GallerySliderMb reverse />
+								<GallerySliderMb />
+							</div>
 						</div>
 					</div>
 				</div>
