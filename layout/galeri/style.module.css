@@ -21,3 +21,16 @@
 .active:hover::before {
 	width: 75%;
 }
+
+@keyframes scroll {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-50%);
+	}
+}
+
+.slideTrack {
+	animation: scroll 10s linear infinite;
+}
