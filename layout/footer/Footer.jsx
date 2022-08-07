@@ -43,7 +43,7 @@ export default function Footer() {
             Gedung EM-DPM UB Lantai 1, Jln. Veteran 06C Malang 65145
           </List>
           <List icon={"/assets/icons/icEmail.svg"}>rajabrawijaya@ub.ac.id</List>
-          <List icon={"/assets/icons/icPhone.svg"}>0816-552-514</List>
+          {/* <List icon={"/assets/icons/icPhone.svg"}>0816-552-514</List> */}
         </div>
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
