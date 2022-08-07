@@ -131,7 +131,7 @@ export default function Faq() {
 
         <div className="container mx-auto pt-24 relative z-3">
           <h1 className="font-agrandir text-blue font-bold text-2xl text-center">
-            Halo Abhiseka, ada yang bisa kami bantu?
+            Halo Adicitta, ada yang bisa kami bantu?
           </h1>
           {loading ? (
             <div role="status" class="w-full animate-pulse space-y-5">

@@ -112,7 +112,7 @@ export default function Nav({ bg, variant }) {
             <Navlink variant={variant} show={show} To={"/faq"}>
               FAQ
             </Navlink>
-            <Link href={"/rajaapps"}>
+            <a href={"/rajaapps"} target="_blank">
               {/* <div className='lg:hidden font-poppins py-2 px-4 bg-yellow font-semibold rounded-lg text-white mt-4'>
 							Raja Apps
 						</div> */}
@@ -123,13 +123,13 @@ export default function Nav({ bg, variant }) {
                     : "text-white border-white"
                 } py-2 px-4 normal-case font-agrandir rounded-lg`}
               >
-                Raja Apps
+                RAJA Apps
               </button>
-            </Link>
+            </a>
           </div>
 
           <div>
-            <Link href={"/rajaapps"}>
+            <a href={"/rajaapps"} target="_blank">
               {/* <a className='lg:block hidden font-poppins py-2 px-4 bg-yellow font-semibold rounded-lg text-white'>
 							Raja Apps
 						</a> */}
@@ -140,9 +140,9 @@ export default function Nav({ bg, variant }) {
                     : "text-white border-white"
                 } py-2 px-4 normal-case font-agrandir rounded-lg`}
               >
-                Raja Apps
+                RAJA Apps
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </nav>

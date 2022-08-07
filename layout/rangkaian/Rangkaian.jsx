@@ -14,7 +14,7 @@ export default function Rangkaian() {
           <RangkaianSlide
             img="/assets/images/icPKKMB.png"
             name="PKKMB"
-            date="16 Agustus - 19 Agustus 2022"
+            date="16 Agustus - 18 Agustus 2022"
           >
             PKKMB atau Pengenalan Kehidupan Kampus Baru Mahasiswa Baru
             Universitas Brawijaya merupakan kegiatan penyambutan mahasiswa baru

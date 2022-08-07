@@ -18,7 +18,13 @@ export default function Pkmaba() {
       <img src="/assets/images/wavepk.svg" className="w-full" alt="" />
       <div className="bg-sea py-20">
         <Heading top="Ragam" bottom="Brawijaya" direction="center" />
-
+        <Dropdown
+          setActive={(e) => {
+            setActive(e);
+          }}
+          data={dataPk}
+          active={getData().fakultas}
+        />
         <Pkdata
           name={getData().name}
           description={getData().description}
@@ -30,14 +36,6 @@ export default function Pkmaba() {
           twitter={getData().twitter}
           instagram={getData().instagram}
           line={getData().line}
-        />
-
-        <Dropdown
-          setActive={(e) => {
-            setActive(e);
-          }}
-          data={dataPk}
-          active={getData().fakultas}
         />
       </div>
     </div>

@@ -42,9 +42,7 @@ export default function Footer() {
           <List icon={"/assets/icons/icLocation.svg"}>
             Gedung EM-DPM UB Lantai 1, Jln. Veteran 06C Malang 65145
           </List>
-          <List icon={"/assets/icons/icEmail.svg"}>
-            rajabrawijaya2022@gmail.com
-          </List>
+          <List icon={"/assets/icons/icEmail.svg"}>rajabrawijaya@ub.ac.id</List>
           <List icon={"/assets/icons/icPhone.svg"}>0816-552-514</List>
         </div>
 

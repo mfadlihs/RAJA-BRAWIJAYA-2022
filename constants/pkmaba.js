@@ -306,7 +306,7 @@ const dataPk = [
   },
   {
     id: "PK2MABA FIA",
-    name: "PKKMABA FIA",
+    name: "PKKMB FIA",
     fakultas: "Fakultas Ilmu Administrasi",
     img: "/assets/fakultas/FIA.jpeg",
     description:
