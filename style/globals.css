@@ -77,7 +77,7 @@
 		src: url(/assets/fonts/Agrandir/Agrandir-TextBold.otf);
 	}
 	.candiHijau {
-		@apply bg-CandiHijau opacity-10 inset-0 bg-contain -z-10 absolute overflow-hidden opacity-10 drop-shadow-md content-['*'];
+		@apply bg-CandiHijau inset-0 bg-contain -z-10 absolute overflow-hidden opacity-10 drop-shadow-md content-['*'];
 	}
 	/* h1 {
 		@apply lg:text-h1 
