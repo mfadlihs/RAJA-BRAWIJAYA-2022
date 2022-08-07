@@ -40,7 +40,7 @@ export default function AdiciittaInfo() {
 
       <Nav variant="white" />
 
-      <div className="after:candiHijau relative pt-24 pb-20">
+      <div className="after:candiHijau h-screen relative pt-24 pb-20">
         <div>
           <div className="md:w-[50vw] h-full mx-4 md:mx-auto drop-shadow-md">
             <Image
