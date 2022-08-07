@@ -111,7 +111,7 @@ export default function Nav({ bg, variant }) {
 						<Navlink variant={variant} show={show} To={"/adicitta-info"}>
 							Adicitta Info
 						</Navlink>
-						<Navlink variant={variant} show={show} To={"/peta_brawijaya"}>
+						<Navlink variant={variant} show={show} To={"/comingsoon"}>
 							Peta Brawijaya
 						</Navlink>
 						<Navlink variant={variant} show={show} To={"/faq"}>
