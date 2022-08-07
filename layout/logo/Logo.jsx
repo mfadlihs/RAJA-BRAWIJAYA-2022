@@ -82,7 +82,7 @@ export default function Logo() {
 							repeat: Infinity,
 						}}
 						src={`/assets/logo/icLogo${active}.png`}
-						className='w-48 md:w-64 lg:w-96 -mb-10 relative mx-auto'
+						className='w-48 md:w-64 lg:w-96 -mb-2 sm:-mb-5 lg:-mb-10 relative mx-auto'
 						alt=''
 					/>
 					<img
