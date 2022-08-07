@@ -47,7 +47,7 @@ export default function Jumbotron() {
 			</div>
 			<img
 				src='/assets/images/jumbotron.png'
-				className='w-full object-cover absolute -bottom-1'
+				className='w-full object-cover absolute -bottom-12'
 			/>
 		</div>
 	);
