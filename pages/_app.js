@@ -3,10 +3,8 @@ import "../style/globals.css";
 import "../style/swiperstyle.css";
 
 function MyApp({ Component, pageProps }) {
-	
 	return (
 		<div>
-		
 			<Component {...pageProps} />
 		</div>
 	);
