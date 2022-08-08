@@ -23,32 +23,32 @@ const data = [
 		arti: "Merepresentasikan Cendekiawan",
 	},
 	{
-		id: "C",
+		id: "D",
 		simbol: "SUMPING TELINGA BERBENTUK SAYAP",
 		arti: "Melambangkan mereka berpendapat.",
 	},
 	{
-		id: "D",
+		id: "H",
 		simbol: "TIGA BINTANG",
 		arti: "Tri Dharma Perguruan Tinggi",
 	},
 	{
-		id: "E",
+		id: "G",
 		simbol: "MAHKOTA RADEN WIJAYA",
 		arti: "Raden Wijaya sebagai tokoh yang terdapat dalam lambang Universitas Brawijaya",
 	},
 	{
-		id: "F",
+		id: "C",
 		simbol: "TONGKAT JENDRAL",
 		arti: "Melambangkan kebijaksanaan",
 	},
 	{
-		id: "G",
+		id: "F",
 		simbol: "GELUNG SUPIT URANG",
 		arti: "Melambangkan keluhuran budi dan semagat menggapai cita.",
 	},
 	{
-		id: "H",
+		id: "E",
 		simbol: "JAMANG DENGAN 3 MAHKOTA DAN ANGKA 60 DI TENGAH",
 		arti: "Angkatan 60 Universitas Brawijaya yang senantiasa menjunjung tinggi Tri Dharma Perguruan Tinggi",
 	},
