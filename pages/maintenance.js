@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { Background, Pattern } from "../constants/Images";
-import Link from "next/link";
-import LoadingPage from "../component/LoadingPage";
-export default function Custom404() {
+import React from 'react'
+import Image from 'next/image'
+import { Pattern } from "../constants/Images";
+
+export default function Maintenance() {
   return (
     <div className="w-screen min-h-screen flex justify-center items-center container ">
       <div
@@ -23,17 +23,11 @@ export default function Custom404() {
         </div>
 
         <div className="drop-shadow-md">
-          <h2 className=" text-secondary font-agrandir font-extrabold text-6xl md:text-8xl text-center ">
-            404
+          <h2 className=" text-grey font-agrandir font-extrabold text-6xl md:text-8xl text-center ">
+            MAAF
           </h2>
-          <h2 className=" text-secondary font-agrandir font-extrabold text-base md:text-2xl text-center">
-            Emangnya perasaan kamu doang yang bisa error? Page RAJA Brawijaya
-            juga bisa error. Cek lagi di lain kesempatan ya! balik ke{" "}
-            <Link href="/">
-              <span className="!text-primary underline cursor-pointer">
-                landing page
-              </span>
-            </Link>
+          <h2 className=" text-black font-agrandir text-base md:text-2xl text-center">
+          Halaman ini sedang dalam perbaikan. Silakan cek website secara berkala untuk informasi berikutnya
           </h2>
         </div>
         <div className="w-full md:w-[50vw] h-full mx-auto rotate-180 drop-shadow-md">
@@ -46,5 +40,5 @@ export default function Custom404() {
         </div>
       </div>
     </div>
-  );
+  )
 }
