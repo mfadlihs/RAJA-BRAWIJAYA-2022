@@ -14,36 +14,36 @@ const dataPk = [
     instagram: "https://www.instagram.com/pk2maba_filkom/",
     line: "https://line.me/ti/p/~@sfz6895o",
   },
-    {
-      id: "PK2MABA FK_ID",
-      name: "PK2MABA FK",
-      fakultas: "Fakultas Kedokteran",
-      img: "/assets/fakultas/FK.png",
-      description:
-        `PROBINMABA FK UB merupakan kegiatan tahunan yang diadakan untuk pembinaan mahasiswa baru. PROBINMABA FK UB sendiri, terdiri dari 2 rangkaian utama yaitu PKKMB (Pengenalan Kehidupan Kampus Mahasiswa Baru) dan BKM (Bina Karakter Mahasiswa). Tema yang diangkat pada tahun ini adalah “Menjadikan Mahasiswa Baru FK UB yang Berintegritas dengan Mengimplementasikan 4 Nilai Kolegium 2 Pilar Pembinaan dalam Kehidupan Kampus, Bermasyarakat, dan Bernegara”. Kegiatan ini memiliki tujuan untuk mencetak dan melatih Mahasiswa Baru FK UB menjadi calon tenaga kesehatan yang berkarakter serta berkualitas di masa yang akan datang.
+  {
+    id: "PK2MABA FK_ID",
+    name: "PK2MABA FK",
+    fakultas: "Fakultas Kedokteran",
+    img: "/assets/fakultas/FK.png",
+    description: `PROBINMABA FK UB merupakan kegiatan tahunan yang diadakan untuk pembinaan mahasiswa baru. PROBINMABA FK UB sendiri, terdiri dari 2 rangkaian utama yaitu PKKMB (Pengenalan Kehidupan Kampus Mahasiswa Baru) dan BKM (Bina Karakter Mahasiswa). Tema yang diangkat pada tahun ini adalah “Menjadikan Mahasiswa Baru FK UB yang Berintegritas dengan Mengimplementasikan 4 Nilai Kolegium 2 Pilar Pembinaan dalam Kehidupan Kampus, Bermasyarakat, dan Bernegara”. Kegiatan ini memiliki tujuan untuk mencetak dan melatih Mahasiswa Baru FK UB menjadi calon tenaga kesehatan yang berkarakter serta berkualitas di masa yang akan datang.
         `,
-      spotify: null,
-      youtube: "https://www.youtube.com/channel/UCDq_bytxOQA8cHVQqDjFx3Q",
-      tiktok: null,
-      telegram: null,
-      twitter: null,
-      instagram: "https://www.instagram.com/probinmabafkub/",
-      line: "https://line.me/ti/p/~@bemfkub",
-    },
-  //   {
-  //     id: "PK2MABA FPIK_ID",
-  //     name: "PK2MABA FPIK",
-  //     fakultas: "Fakultas Perikanan dan Ilmu Kelautan",
-  //     description:
-  //       "PK2MABA FPIK Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium numquam inventore excepturi repudiandae dolores voluptates illo quas hic accusantium amet.",
-  //     spotify: "spotify/pk2mabaFPIK",
-  //     youtube: "youtube/pk2mabaFPIK",
-  //     tiktok: "tiktok/pk2mabaFPIK",
-  //     telegram: "telegram/pk2mabaFPIK",
-  //     twitter: "twitter/pk2mabaFPIK",
-  //     instagram: "instagram/pk2mabaFPIK",
-  //     line: "line/pk2mabaFPIK",
-  //   },
+    spotify: null,
+    youtube: "https://www.youtube.com/channel/UCDq_bytxOQA8cHVQqDjFx3Q",
+    tiktok: null,
+    telegram: null,
+    twitter: null,
+    instagram: "https://www.instagram.com/probinmabafkub/",
+    line: "https://line.me/ti/p/~@bemfkub",
+  },
+  {
+    id: "PK2MABA FPIK_ID",
+    name: "PK2MABA FPIK",
+    img: "/assets/fakultas/FPIK.png",
+    fakultas: "Fakultas Perikanan dan Ilmu Kelautan",
+    description:
+      "PINISHI merupakan singkatan dari Pekan Pengenalan Lingkungan dan Studi Perikanan dan Ilmu Kelautan. Pinishi sendiri merupakan kapal layar tradisional khas Indonesia yang berasal dari Suku Bugis. Kapal Pinishi terbuat dari kayu mahoni yang terkenal solid dan memiliki 7 layar yang memiliki makna bahwa nenek moyang Indonesia mampu mengarungi tujuh samudera besar di dunia. Dengan ini diharapkan mahasiswa FPIK dapat memiliki sifat yang kuat bagai kayu mahoni serta tangguh dalam mengarungi rintangan dan hambatan di masa mendatang.",
+    spotify: null,
+    youtube: null,
+    tiktok: null,
+    telegram: null,
+    twitter: null,
+    instagram: null,
+    line: null,
+  },
   {
     id: "PK2MABA FKH",
     name: "PKKMB FKH",
@@ -68,6 +68,7 @@ const dataPk = [
   {
     id: "PK2MABA FIB",
     name: "PKKMABA FIB",
+    img: "/assets/fakultas/FIB.png",
     fakultas: "Fakultas Ilmu Budaya",
     description:
       "PKKMABA FIB merupakan sebuah sarana bagi para mahasiswa baru dalam mengenal kehidupan kampus, khususnya Fakultas Ilmu Budaya secara lebih jauh. Tujuan diadakannya PKKMABA FIB adalah untuk memberi pengenalan yang layak kepada para mahasiswa tentang kehidupan kampus supaya  mahasiswa baru bisa beradaptasi dengan baik terhadap fakultasnya, serta memiliki rasa bangga dan semangat untuk membangun dan menjadikan Fakultas Ilmu Budaya menjadi lebih baik.",
@@ -89,6 +90,7 @@ const dataPk = [
     id: "PK2MABA VOKASI",
     name: "PKKMB VOKASI (YUWARAJA XIV)",
     fakultas: "Fakultas Vokasi",
+    img: "/assets/fakultas/VOKASI.png",
     description:
       "PKKMB atau yang biasa dikenal dengan Pengenalan Kehidupan Kampus Mahasiswa Baru merupakan sebuah kegiatan penyambutan bagi mahasiswa baru khususnya Fakultas Vokasi Universitas Brawijaya. Kegiatan ini merupakan wadah bagi mahasiswa baru untuk membina dan membentuk karakter mahasiswa baru dalam beradaptasi dengan lingkup kampus baik dalam kegiatan belajar mengajar, lingkungan kampus, serta unik kegiatan mahasiswa. Kegiatan PKKMB Vokasi dibagi menjadi 3 (tiga) rangkaian kegiatan, yaitu YUWARAJA, KRIMA (Krida Mahasiswa), serta Kejuaran dan OH",
     // null data
@@ -129,6 +131,7 @@ const dataPk = [
   {
     id: "PK2MABA FMIPA",
     name: "PROBINMABA FMIPA",
+    img: "/assets/fakultas/FMIPA.png",
     fakultas: "Fakultas Matematika dan IPA",
     description:
       "PROBINMABA merupakan wadah bagi mahasiswa baru FMIPA UB 2022 untuk mendapatkan pembekalan atau arahan dan penanaman nilai supaya dapat beradaptasi dalam kehidupan kampus dengan bentuk kegiatan berupa webinar, penugasan, praktik diskusi, apresiasi serta video inspirasi dan inaugurasi sebagai acara penutup. Tahun ini PROBINMABA FMIPA mengangkat tema “EKSPLORASI” Evolusioner, Kontributif, Solutif, Peduli, Loyal, Optimis, Religius, Aktif, Sinergis, dan Inovatif",
@@ -191,7 +194,8 @@ const dataPk = [
     id: "PK2MABA FISIP",
     name: "PKKMABA FISIP",
     fakultas: "Fakultas Ilmu Sosial dan Ilmu Politik",
-    description: "Pengenalan Kehidupan Kampus Mahasiswa Baru Fakultas Ilmu Sosial dan Ilmu Politik Universitas Brawijaya (PKKMABA FISIP UB) merupakan kegiatan pengenalan dan orientasi yang dilakukan rutin setiap tahun. Kegiatan PKKMABA FISIP UB memiliki tujuan untuk memberikan pembekalan kepada mahasiswa baru agar dapat lebih cepat beradaptasi dengan lingkungan kampus, khususnya kegiatan pembelajaran dan kemahasiswaan serta bertujuan membentuk karakter setiap mahasiswa baru yang peka terhadap lingkungan kehidupan berbangsa dan bernegara. PKKMABA FISIP UB sejatinya merupakan langkah awal bagi mahasiswa baru guna mengenal lebih dalam dinamika kampus sehingga kegiatan ini mutlak harus diikuti oleh setiap mahasiswa baru. Adapun tema yang diangkat PKKMABA FISIP UB tahun ini adalah “Sumebyar Karsa Laksana”",
+    description:
+      "Pengenalan Kehidupan Kampus Mahasiswa Baru Fakultas Ilmu Sosial dan Ilmu Politik Universitas Brawijaya (PKKMABA FISIP UB) merupakan kegiatan pengenalan dan orientasi yang dilakukan rutin setiap tahun. Kegiatan PKKMABA FISIP UB memiliki tujuan untuk memberikan pembekalan kepada mahasiswa baru agar dapat lebih cepat beradaptasi dengan lingkungan kampus, khususnya kegiatan pembelajaran dan kemahasiswaan serta bertujuan membentuk karakter setiap mahasiswa baru yang peka terhadap lingkungan kehidupan berbangsa dan bernegara. PKKMABA FISIP UB sejatinya merupakan langkah awal bagi mahasiswa baru guna mengenal lebih dalam dinamika kampus sehingga kegiatan ini mutlak harus diikuti oleh setiap mahasiswa baru. Adapun tema yang diangkat PKKMABA FISIP UB tahun ini adalah “Sumebyar Karsa Laksana”",
     // null data
     spotify: null,
     // null data
@@ -209,8 +213,10 @@ const dataPk = [
   {
     id: "PK2MABA FPIK",
     name: "PKKMABA FPIK",
+    img: "/assets/fakultas/FPIK.png",
     fakultas: "Fakultas Perikanan dan Ilmu Kelautan",
-    description: "Pekan Pengenalan Lingkungan dan Studi Perikanan Ilmu Kelautan atau yang biasa dikenal dengan PINISHI merupakan gerbang awal bagi mahasiswa baru Fakultas Perikanan dan Ilmu Kelautan Universitas Brawijaya Malang. PINISHI memiliki 5 rangkaian acara utama yakni PKKMABA (Ordik dan ormawa), Krima (Krida Mahasiswa), Bazar KWU, Inagurasi dan FCC PKKMABA se-Indonesia. PINISHI diharapkan menjadi rangkaian acara yang mampu memperkenalkan lingkungan perkuliahan dan membentuk mahasiswa baru dengan karakter yang berlandaskan tri dharma perguruan tinggi.",
+    description:
+      "Pekan Pengenalan Lingkungan dan Studi Perikanan Ilmu Kelautan atau yang biasa dikenal dengan PINISHI merupakan gerbang awal bagi mahasiswa baru Fakultas Perikanan dan Ilmu Kelautan Universitas Brawijaya Malang. PINISHI memiliki 5 rangkaian acara utama yakni PKKMABA (Ordik dan ormawa), Krima (Krida Mahasiswa), Bazar KWU, Inagurasi dan FCC PKKMABA se-Indonesia. PINISHI diharapkan menjadi rangkaian acara yang mampu memperkenalkan lingkungan perkuliahan dan membentuk mahasiswa baru dengan karakter yang berlandaskan tri dharma perguruan tinggi.",
     // null data
     spotify: null,
     // null data
@@ -288,6 +294,7 @@ const dataPk = [
   {
     id: "PK2MABA FEB",
     name: "PKK-MABA FEB",
+    img: "/assets/fakultas/FEB.png",
     fakultas: "Fakultas Ekonomi dan Bisnis",
     description:
       "PKK-MABA FEB UB merupakan sarana bagi mahasiswa baru untuk dapat beradaptasi dengan lingkup kampus dan juga memberi bekal untuk mencapai keberhasilan dalam menempuh pendidikan di Perguruan Tinggi.  Kegiatan PKK MABA 2022 membangun budaya dalam berpikir kritis dan kreatif. Selain itu, menebarkan dampak positif melalui komunikasi yang efektif kepada seluruh stakeholder. Melalui kegiatan PKK MABA FEB UB diharapkan mahasiswa mengetahui dan memahami pentingnya Tri Dharma Perguruan Tinggi serta Peran dan Fungsi Mahasiswa. Tahun ini PKK-MABA FEB 2022 membawa nama Eternal.",
@@ -353,7 +360,8 @@ const dataPk = [
     name: "PKKMABA FT",
     fakultas: "Fakultas Teknik",
     img: "/assets/fakultas/FT.png",
-    description: "Deskripsi untuk PKKMABA Fakultas Teknik Universitas Brawijaya tidak tersedia saat ini.",
+    description:
+      "PKKMB (Pengenalan Kehidupan Kampus Mahasiswa Baru) tahun 2022 memiliki tujuan umum untuk memberikan pembekalan kepada mahasiswa baru agar dapat lebih cepat beradaptasi dengan lingkungan kampus dan sistem pendidikan di Fakultas Teknik Universitas Brawijaya.",
     // null data
     spotify: null,
     // null data
