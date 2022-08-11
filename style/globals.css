@@ -133,6 +133,29 @@
 	} */
 }
 
+.twibbon {
+	box-shadow: inset 0px 8.38095px 20.9524px rgba(0, 0, 0, 0.1);
+	font-size: 24px;
+	padding: 10px 20px;
+	outline: none;
+	font-family: "Open Sans", "sans-serif";
+}
+.twibbon::placeholder {
+	color: #555;
+}
+
+.overflow-style::-webkit-scrollbar {
+	width: 10px;
+}
+.overflow-style::-webkit-scrollbar-thumb {
+	background: #033e50;
+	border-radius: 10px;
+}
+.overflow-style::-webkit-scrollbar-track {
+	background: #3e4a4a;
+	border-radius: 5px;
+}
+
 /* 
 h1 {
 	font-size: 64px;
