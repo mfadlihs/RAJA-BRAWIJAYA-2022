@@ -28,6 +28,7 @@ module.exports = {
 				poppins: ["poppins", "sans-serif"],
 				agrandir: ["agrandir", "sans-serif"],
 				droid: ["droid", "serif"],
+				open: ["Open Sans", "sans-serif"],
 			},
 			container: {
 				padding: {
