@@ -1,7 +1,9 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
 import { useEffect, useRef } from "react";
+import Clipboard from "clipboard";
 export default function Document() {
+  new Clipboard(".clipboard-btn");
   return (
     <Html>
       <Head>
