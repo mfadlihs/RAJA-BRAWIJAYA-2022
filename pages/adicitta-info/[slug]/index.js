@@ -53,6 +53,7 @@ export default function Index() {
 				setLoading(false);
 			});
 	}, [slug]);
+
 	const date = date => {
 		const dateSplit = date.split("-");
 		const year = dateSplit[0];
@@ -61,6 +62,7 @@ export default function Index() {
 		day = day.split("T")[0];
 		return `${day}-${month}-${year}`;
 	};
+
 	return (
 		<>
 			<Head>
