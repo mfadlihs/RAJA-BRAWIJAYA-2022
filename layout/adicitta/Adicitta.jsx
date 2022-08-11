@@ -21,12 +21,12 @@ export default function Adicitta() {
 						</Link>
 					</div>
 					<div className='md:flex md:mt-6 lg:w-3/4 lg:justify-center'>
-						<Link href={"/comingsoon"}>
+						<Link href={"/adicitta-info/twibbon"}>
 							<div className='mx-auto md:w-full lg:mx-10 md:mx-3 mt-10 md:mt-0'>
 								<List img={"/assets/icons/icTwibbon.svg"} name='Twibbon' />
 							</div>
 						</Link>
-						<Link href={"/comingsoon"}>
+						<Link href={"/adicitta-info/atribut"}>
 							<div className='mx-auto md:w-full lg:mx-10 md:mx-3 mt-4 md:mt-0'>
 								<List img={"/assets/icons/icAtribut.svg"} name='Atribut' />
 							</div>

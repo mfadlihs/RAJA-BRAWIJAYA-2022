@@ -37,10 +37,10 @@ export default function Header() {
 					href='https://drive.google.com/file/d/1tEO2wcaOuia0sCkIKwGLAecDztFaE-Pi/view?usp=drivesdk'
 					target={"_blank"}
 				>
-					<Button className='bg-yellow hover:bg-yellow flex items-center py-3 px-6 rounded-lg body text-white shadow-2xl'>
+					<button className='bg-yellow hover:bg-yellow flex items-center py-3 px-6 rounded-lg body text-white shadow-2xl'>
 						<DownloadOutlined className='mr-3' />
 						Download Twibbon
-					</Button>
+					</button>
 				</a>
 			</Link>
 		</div>
