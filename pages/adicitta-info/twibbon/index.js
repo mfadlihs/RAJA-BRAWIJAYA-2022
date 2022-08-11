@@ -14,7 +14,9 @@ export default function Index() {
   const [fakultas, setFakultas] = useState("");
 
   const captionRef = useRef(null);
-  const clipboard = new Clipboard(".clipboard-btn");
+  useEffect(() => {
+    new Clipboard(".clipboard-btn");
+  }, []);
   return (
     <>
       <Head>
