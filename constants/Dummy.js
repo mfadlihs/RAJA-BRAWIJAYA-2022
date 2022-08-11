@@ -37,3 +37,188 @@ export const SosialMedia = [
     link: "https://rajabrawijaya.ub.ac.id/sp",
   },
 ];
+export const AtributData = (isMan) => {
+  const Cowok = [
+    {
+      text: "Rambut tidak boleh di cat, harus dipotong pendek, tidak bermodel skin hairstyle, rapi dan tidak melebihi leher, telinga, maupun alis.",
+    },
+    {
+      text: "Memakai kemeja lengan panjang berwarna putih berkerah berbahan kain (bukan berbahan kaos ataupun jeans), rapi, tidak ketat dan tidak transparan.",
+    },
+    {
+      text: "Memakai celana penjang berwarna hitam berbahan kain (bukan berbahan kaos ataupun jeans) rapi, tidak ketat, tidak transparan, tidak bermotif bukan cutbray atau skinny.",
+    },
+    {
+      text: "Memakai dasi berwarna hitam.",
+    },
+    {
+      text: "Memakai ikat pinggang berwarna hitam polos dengan mata gesper yang tidak besar dan mencolok.",
+    },
+    {
+      text: "Memakai sepatu pantofel berwarna hitam.",
+    },
+    {
+      text: "Memakai kaos kaki berwarna putih tidak transparan, polos dengan tinggi minimal 10 cm diatas mata kaki.",
+    },
+    {
+      text: "Memakai tas ransel.",
+    },
+    {
+      text: "Memasang gantungan kunci / bag tag (terlampir) pada tas ransel.",
+    },
+    {
+      text: "Memakai nametag serta membawa kartu kendali kesehatan selama kegiatan RAJA BRAWIJAYA berlangsung",
+    },
+    {
+      text: "Bagi mahasiswa baru yang memiliki penyakit kronis seperti jantung, paru-paru, maag kronis dll wajib menyematkan pita berwarna hitam pada bagian kiri lengan.",
+    },
+    {
+      text: "Tidak menggunakan perhiasan.",
+    },
+    {
+      text: "Untuk maba difable menggunakan pita berwarna hijau yang disematkan pada bagian kiri lengan",
+    },
+  ];
+  const Cewek = [
+    {
+      text: "Tidak berjilbab : <br/>Rambut ditata rapi tidak boleh di cat. harus dikuncir satu model ekor kuda (kuncir rambut berwarna hitam) tanpa poni. diperbolehkan memakai jepit berwarna putih. ",
+    },
+    {
+      text: "Berjilbab : <br/> Memakai jilbab berwarna hitam segiempat simetris. tidak transparan. tidak bermotif. tidak berenda. tanpa aksesoris tambahan kecuali peniti ataupun jarum pentul.  ",
+    },
+    {
+      text: "Semua Maba Perempuan : <br/> Memakai kemeja lengan panjang berwarna putih polos berkerah berbahan kain (bukan berbahan kaos ataupun jeans). rapi. tidak ketat. tidak bermotif. dan tidak transparan.  ",
+    },
+    {
+      text: "Memakai rok panjang berwarna hitam polos berbahan kain (bukan berbahan kaos ataupun chiffon). rapi. tidak ketat. tidak transparan. tidak bermotif dan tanpa belahan. (rok wiru/ramplel)",
+    },
+    {
+      text: "Bagi yang sedang berhalangan memakai pita berwarna merah dan disematkan pada bagian kiri lengan (tidak berjilbab). di sematkan pada bagian dada kiri (berjilbab).",
+    },
+    {
+      text: "Memakai dasi berwarna hitam polos.",
+    },
+    {
+      text: "Memakai ikat pinggang berwarna hitam polos dengan mata gesper yang tidak besar dan mencolok",
+    },
+    {
+      text: "Memakai sepatu pantofel berwarna hitam polos tidak ber hak.",
+    },
+    {
+      text: "Memakai kaos kaki berwarna putih. tidak transparan. polos dengan tinggi minimal 10 cm diatas mata kaki.",
+    },
+    {
+      text: "Memakai tas ransel berwarna hitam",
+    },
+    {
+      text: "Memasang gantungan tas (terlampir) pada tas ransel",
+    },
+    {
+      text: "Memakai nametag serta membawa kartu kendali kesehatan selama kegiatan RAJA BRAWIJAYA berlangsung (terlampir)",
+    },
+    {
+      text: "Bagi Mahasiswa baru yang memiliki penyakit kronis seperti jantung. paruparu. maag kronis dan lain-lain wajib menyematkan pita warna hitam pada bagian kiri lengan (tidak berjilbab) di sematkan pada bagian dada kiri (berjilbab).",
+    },
+    {
+      text: "Tidak mengenakan perhiasan apapun.",
+    },
+    {
+      text: "Untuk maba difable menggunakan pita berwarna hijau yang disematkan pada bagian kiri lengan.",
+    },
+  ];
+  if (isMan) {
+    return Cowok;
+  } else {
+    return Cewek;
+  }
+};
+export const AtributType = [
+  {
+    text: "Name Tag",
+    data: {
+      rules: [
+        "Mahasiswa baru mencetak name tag (format di download)",
+        "Name tag dimasukan ke dalam ID Case dengan Tali Id Card (Lanyard) warna biru.",
+        "Foto berukuran 3x4 cm menggunakan foto SIAM UB",
+      ],
+      image: "/assets/images/IdCard.png",
+      download: "/assets/images/IdCard.png",
+    },
+  },
+  {
+    text: "Back Tag",
+    data: {
+      rules: [
+        "Mahasiswa baru mencetak bag tag dengan ketentuan yang telah ditetapkan oleh panitia",
+        "Bag tag dimasukan kedalam Id Case berukuran B4 kemudian diikat pada ransel dengan pita berwarna biru",
+      ],
+      image: "/assets/images/BackCard.png",
+      download: "/assets/images/BackCard.png",
+    },
+  },
+  {
+    text: "Kartu Kendali Kesehatan",
+    data: {
+      rules: [
+        "Mahasiswa membuat kartu kendali dengan ketentuan yang telah ditetapkan oleh panitia",
+        "Kartu kendali kesehatan di print di belakang Name Tag",
+        "Kartu kendali kesehatan bertujuan untuk mengetahui riwayat kesehatan mahasiswa ",
+        "Mahasiswa baru menempelkan foto berukuran 3x4 serta mengisi format kartu kendali ",
+      ],
+      image: "/assets/images/KartuKK.png",
+      download: "/assets/images/KartuKK.png",
+    },
+  },
+  {
+    text: "Blocknote Catatan Perjuangan",
+    data: {
+      rules: [
+        "Mahasiswa baru membuat bloknote catatan perjuangan sesuai dengan ketentuan yang ",
+        "Cover bloknote Catatan Perjuangan dicetak dengan ukuran A5",
+      ],
+      image: "/assets/images/BnCard.png",
+      download: "/assets/images/BnCard.png",
+    },
+  },
+  {
+    text: "Ketentuan Tambahan",
+    type: "heading",
+    data: [
+      {
+        head: "Barang yang Wajib Dibawa",
+        rules: [
+          "Makanan Ringan seperti Roti dan Susu (Apabila dibutuhkan)",
+          "Obat-Obatan Pribadi",
+          "Print Out KTMS ",
+          "Botol Bekas berukuran 600 ml sebanyak 2 pcs",
+          "Buku Bekas sebanyak 1 pcs",
+          "Alat Sholat (bagi yang beragama Islam)",
+          "Payung atau Jas Hujan",
+          "Alat Tulis",
+          "Hand Sanitizer",
+        ],
+      },
+      {
+        head: "Ketentuan Buku yang Dibawa",
+        rules: [
+          "Aturan pengumpulan buku",
+          "Buku cerita bergambar/fabel",
+          "Buku tematik Mata pelajaran SD/MI Sederajat, mata pelajaran apapun dan bebas kelas berapapun (kelas 1-6) dengan ketentuan sebagai berikut: ",
+          "- Tematik bebas (Tema 1-5 ",
+          "- Buku pegangan Mata Pelajaran Bahasa Inggri",
+          "Kriteria buku:",
+          "Kondisi buku masih layak digunakan (80%)",
+          "Tidak ada bagian buku yang sobek / dilakban /disolasi / di staple",
+          "Tidak ada coretan melebihi 10% dari keseluruhan isi buk",
+        ],
+      },
+      {
+        head: "Ketentuan Masker",
+        rules: [
+          "Mahasiswa baru wajib memakai masker KN95",
+          "Masker berwarna putih",
+        ],
+      },
+    ],
+  },
+];
