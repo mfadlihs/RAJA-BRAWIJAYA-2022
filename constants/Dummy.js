@@ -142,7 +142,8 @@ export const AtributType = [
         "Foto berukuran 3x4 cm menggunakan foto SIAM UB",
       ],
       image: "/assets/images/IdCard.png",
-      download: "/assets/images/IdCard.png",
+      download:
+        "https://drive.google.com/file/d/19Di5BXzeYeF-02JD6LmC2n4L2a6FTk8y/view?usp=sharing",
     },
   },
   {
@@ -153,7 +154,8 @@ export const AtributType = [
         "Bag tag dimasukan kedalam Id Case berukuran B4 kemudian diikat pada ransel dengan pita berwarna biru",
       ],
       image: "/assets/images/BackCard.png",
-      download: "/assets/images/BackCard.png",
+      download:
+        "https://drive.google.com/file/d/1qBI5z8VDjEi5ALN9ZgmnMT3rlYukWJ83/view?usp=sharing",
     },
   },
   {
@@ -166,7 +168,8 @@ export const AtributType = [
         "Mahasiswa baru menempelkan foto berukuran 3x4 serta mengisi format kartu kendali ",
       ],
       image: "/assets/images/KartuKK.png",
-      download: "/assets/images/KartuKK.png",
+      download:
+        "https://drive.google.com/file/d/1pdpfQ02L-AJFo1SqFRCGZZHiaqRBm5jX/view?usp=sharing",
     },
   },
   {
@@ -177,7 +180,8 @@ export const AtributType = [
         "Cover bloknote Catatan Perjuangan dicetak dengan ukuran A5",
       ],
       image: "/assets/images/BnCard.png",
-      download: "/assets/images/BnCard.png",
+      download:
+        "https://drive.google.com/file/d/1YzeDWyBuVyEl5IOyH1GJ9hHLtj8XCXB2/view?usp=sharing",
     },
   },
   {
@@ -222,3 +226,38 @@ export const AtributType = [
     ],
   },
 ];
+export const PreviewAtribut = (isMan) => {
+  const cowok = [
+    {
+      image: "/assets/images/atribut1.png",
+      title: "Tampak Depan",
+    },
+    {
+      image: "/assets/images/atribut3.png",
+      title: "Tampak Samping",
+    },
+    {
+      image: "/assets/images/atribut2.png",
+      title: "Tampak Belakang",
+    },
+  ];
+
+  const cewek = [
+    {
+      image: "/assets/images/atribut4.png",
+      title: "Tampak Depan",
+    },
+    {
+      image: "/assets/images/atribut5.png",
+      title: "Tampak Samping",
+    },
+    {
+      image: "/assets/images/atribut6.png",
+      title: "Tampak Belakang",
+    },
+  ];
+  if (isMan) {
+    return cowok;
+  }
+  return cewek;
+};

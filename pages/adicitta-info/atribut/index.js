@@ -48,7 +48,7 @@ export default function Atribut() {
                 <div className="bg-orange w-fit hover:bg-orange flex items-center rounded-lg body text-white shadow-2xl">
                   {/* <DownloadOutlined className='mr-3' />
 				Download Twibbon */}
-                  <Button
+                  <button
                     className={`py-3 px-6 text-white rounded-lg ${
                       isMan && "bg-yellow hover:bg-yellow"
                     }`}
@@ -61,8 +61,8 @@ export default function Atribut() {
                     }}
                   >
                     Laki-Laki
-                  </Button>
-                  <Button
+                  </button>
+                  <button
                     className={`py-3 px-6 text-white rounded-lg ${
                       !isMan && "bg-yellow hover:bg-yellow"
                     }`}
@@ -71,7 +71,7 @@ export default function Atribut() {
                     }}
                   >
                     Perempuan
-                  </Button>
+                  </button>
                 </div>
               </div>
               <div className="h2 mt-8 mb-8 w-fit text-green relative ">
@@ -79,7 +79,7 @@ export default function Atribut() {
                 <div className="absolute w-4/5 h-1 -bottom-2 bg-orange"></div>
               </div>
               <div className="md:flex flex-row-reverse items-start mt-8 gap-6">
-                <FotoAtribut />
+                <FotoAtribut isMan={isMan} />
                 <div className="text-justify">
                   <ol>
                     {AtributData(isMan).map((item, index) => (
@@ -110,11 +110,11 @@ export default function Atribut() {
                 </div>
               </div>
               <Link href={"atribut/detail"}>
-                <Button
+                <button
                   className={`py-3 px-6 mt-5 text-white rounded-lg bg-yellow hover:bg-orange`}
                 >
                   Ketentuan Atribut
-                </Button>
+                </button>
               </Link>
             </div>
           </div>
