@@ -6,7 +6,7 @@ import Header from "../../../layout/twibbon/Header";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import Alert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import SeeOther from "../../../layout/adcittaInfo/SeeOther";
 import Clipboard from "clipboard";
 export default function Index() {
