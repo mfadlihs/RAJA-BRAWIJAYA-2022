@@ -8,15 +8,15 @@ import Alert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
 import { useRef, useState } from "react";
 import SeeOther from "../../../layout/adcittaInfo/SeeOther";
-// import Clipboard from "clipboard";
+import Clipboard from "clipboard";
 export default function Index() {
   const [name, setName] = useState("");
   const [fakultas, setFakultas] = useState("");
 
   const captionRef = useRef(null);
-  // useEffect(() => {
-  //   new Clipboard(".clipboard-btn");
-  // }, []);
+  useEffect(() => {
+    new Clipboard(".clipboard-btn");
+  }, []);
   return (
     <>
       <Head>
