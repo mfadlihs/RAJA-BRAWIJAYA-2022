@@ -185,6 +185,22 @@ export const AtributType = [
     },
   },
   {
+    text : "Pita Cluster Luring",
+    data : {
+      rules : [
+        "PITA WAJIB DIPAKAI DI LENGAN KANAN",
+        "Sesi 1: Memakai pita warna kuning",
+        "Sesi 2: Memakai pita warna merah",
+        "Sesi 3: Memakai pita warna hijau",
+        "Sesi 4: Memakai pita warna biru",
+        "Sesi 5: Memakai pita warna kuning",
+        "Sesi 6: Memakai pita warna merah",
+        "Sesi 7: Memakai pita warna hijau",
+        "Sesi 8: Memakai pita warna biru",
+      ]
+    }
+  },
+  {
     text: "Ketentuan Tambahan",
     type: "heading",
     data: [
@@ -223,19 +239,6 @@ export const AtributType = [
           "Masker berwarna putih",
         ],
       },
-      {
-        head : 'Ketentuan Pita Cluster Luring',
-        rules : [
-          'Sesi 1 : Pita warna kuning',
-          'Sesi 2 : Pita warna merah',
-          'Sesi 3 : Pita warna hijau',
-          'Sesi 4 : Pita warna biru',
-          'Sesi 5 : Pita warna kuning',
-          'Sesi 6 : Pita warna kuning',
-          'Sesi 7 : Pita warna kuning',
-          'Sesi 8 : Pita warna kuning',
-        ]
-      }
     ],
   },
 ];

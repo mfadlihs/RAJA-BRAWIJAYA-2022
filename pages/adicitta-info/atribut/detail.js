@@ -74,6 +74,7 @@ export default function Atribut() {
                   )}
                 </div>
               </div>
+              {/* heading */}
               {AtributType[atributId].type !== "heading" && (
                 <div className="h2 mt-8 mb-8 w-fit text-green relative ">
                   <div>Ketentuan {AtributType[atributId].text}</div>
@@ -87,30 +88,38 @@ export default function Atribut() {
                       <ol>
                         {AtributType[atributId].data.rules.map(
                           (item, index) => {
+                            if(AtributType[atributId].text == "Pita Cluster Luring"){
+                              if(index==0){
+                                return  <p key={index}>{item}</p>;
+                              }
+                            }
                             return <li key={index}>{item}</li>;
                           }
                         )}
                       </ol>
                     </div>
-                    <div className=" md:max-w-[40%] my-5 md:my-0">
-                      <div className="border-yellow  border-4 p-5 rounded-md">
-                        <img
-                          src={AtributType[atributId].data.image}
-                          alt="idCard"
-                        />
-                        <div className="px-5 pt-5">
-                          <a
-                            download={AtributType[atributId].data.download}
-                            href={AtributType[atributId].data.download}
-                            target={"_blank"}
-                          >
-                            <button className="bg-orange px-3 py-2  w-full font-bold items-center text-white flex justify-center hover:bg-yellow rounded-md shadow-md">
-                              <DownloadOutlined  /> Download
-                            </button>
-                          </a>
+                    {AtributType[atributId].text !== "Pita Cluster Luring" && (
+                      <div className=" md:max-w-[40%] my-5 md:my-0">
+                        <div className="border-yellow  border-4 p-5 rounded-md">
+                          {/* foto atribut */}
+                          <img
+                            src={AtributType[atributId].data.image}
+                            alt="idCard"
+                          />
+                          <div className="px-5 pt-5">
+                            <a
+                              download={AtributType[atributId].data.download}
+                              href={AtributType[atributId].data.download}
+                              target={"_blank"}
+                            >
+                              <button className="bg-orange px-3 py-2  w-full font-bold items-center text-white flex justify-center hover:bg-yellow rounded-md shadow-md">
+                                <DownloadOutlined /> Download
+                              </button>
+                            </a>
+                          </div>
                         </div>
-                      </div>
-                    </div>
+                      </div>)}
+
                   </>
                 ) : (
                   <div>
@@ -125,13 +134,7 @@ export default function Atribut() {
                             <ol>
                               {item.rules.map((itemRules, indexRules) => {
                                 if (index == 1 || index == 3) {
-                                  if(index == 3){
-                                    return (
-                                      <p key={index} className="mb-1">
-                                        {itemRules}
-                                      </p>
-                                    );
-                                  }else if ( indexRules == 0 || indexRules == 5 ) {
+                                  if (indexRules == 0 || indexRules == 5) {
                                     return (
                                       <p key={index} className="!font-bold">
                                         {itemRules}
@@ -150,7 +153,6 @@ export default function Atribut() {
                   </div>
                 )}
               </div>
-
               <div className="w-1/3 absolute rotate-180 bottom-0 z-0 opacity-50">
                 <Image
                   src={Background.Feather}
