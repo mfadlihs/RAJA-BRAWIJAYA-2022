@@ -169,7 +169,7 @@ export const AtributType = [
       ],
       image: "/assets/images/KartuKK.png",
       download:
-        "https://drive.google.com/file/d/1pdpfQ02L-AJFo1SqFRCGZZHiaqRBm5jX/view?usp=sharing",
+        "https://drive.google.com/file/d/1RvkghzEI1zQw-qm8m-AO8CJjLxyqvE4c/view?usp=sharing",
     },
   },
   {
@@ -233,11 +233,11 @@ export const PreviewAtribut = (isMan) => {
       title: "Tampak Depan",
     },
     {
-      image: "/assets/images/atribut3.png",
+      image: "/assets/images/atribut2.png",
       title: "Tampak Samping",
     },
     {
-      image: "/assets/images/atribut2.png",
+      image: "/assets/images/atribut3.png",
       title: "Tampak Belakang",
     },
   ];

@@ -45,11 +45,11 @@ export default function Atribut() {
                     RAJA Brawijaya
                   </h2>
                 </div>
-                <div className="bg-orange w-fit hover:bg-orange flex items-center rounded-lg body text-white shadow-2xl">
+                <div className="bg-orange w-full sm:w-fit hover:bg-orange sm:flex items-center rounded-lg body text-white shadow-2xl">
                   {/* <DownloadOutlined className='mr-3' />
 				Download Twibbon */}
-                  <button
-                    className={`py-3 px-6 text-white rounded-lg ${
+                  <div
+                    className={`py-2 sm:py-3 px-4 sm:px-6 text-center text-white rounded-lg ${
                       isMan && "bg-yellow hover:bg-yellow"
                     }`}
                     sx={{
@@ -61,9 +61,9 @@ export default function Atribut() {
                     }}
                   >
                     Laki-Laki
-                  </button>
-                  <button
-                    className={`py-3 px-6 text-white rounded-lg ${
+                  </div>
+                  <div
+                    className={`py-2 sm:py-3 px-4 sm:px-6 text-center text-white rounded-lg ${
                       !isMan && "bg-yellow hover:bg-yellow"
                     }`}
                     onClick={() => {
@@ -71,15 +71,15 @@ export default function Atribut() {
                     }}
                   >
                     Perempuan
-                  </button>
+                  </div>
                 </div>
               </div>
+              <FotoAtribut isMan={isMan} />
               <div className="h2 mt-8 mb-8 w-fit text-green relative ">
                 <div>Atribut yang Benar</div>
                 <div className="absolute w-4/5 h-1 -bottom-2 bg-orange"></div>
               </div>
-              <div className="md:flex flex-row-reverse items-start mt-8 gap-6">
-                <FotoAtribut isMan={isMan} />
+              <div className="flex-row-reverse items-start mt-8 gap-6">
                 <div className="text-justify">
                   <ol>
                     {AtributData(isMan).map((item, index) => (
