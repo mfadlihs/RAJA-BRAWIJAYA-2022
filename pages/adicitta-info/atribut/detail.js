@@ -124,8 +124,14 @@ export default function Atribut() {
                           <div className="text-justify flex-1">
                             <ol>
                               {item.rules.map((itemRules, indexRules) => {
-                                if (index == 1) {
-                                  if (indexRules == 0 || indexRules == 5) {
+                                if (index == 1 || index == 3) {
+                                  if(index == 3){
+                                    return (
+                                      <p key={index} className="mb-1">
+                                        {itemRules}
+                                      </p>
+                                    );
+                                  }else if ( indexRules == 0 || indexRules == 5 ) {
                                     return (
                                       <p key={index} className="!font-bold">
                                         {itemRules}

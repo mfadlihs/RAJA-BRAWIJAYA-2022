@@ -223,6 +223,19 @@ export const AtributType = [
           "Masker berwarna putih",
         ],
       },
+      {
+        head : 'Ketentuan Pita Cluster Luring',
+        rules : [
+          'Sesi 1 : Pita warna kuning',
+          'Sesi 2 : Pita warna merah',
+          'Sesi 3 : Pita warna hijau',
+          'Sesi 4 : Pita warna biru',
+          'Sesi 5 : Pita warna kuning',
+          'Sesi 6 : Pita warna kuning',
+          'Sesi 7 : Pita warna kuning',
+          'Sesi 8 : Pita warna kuning',
+        ]
+      }
     ],
   },
 ];
