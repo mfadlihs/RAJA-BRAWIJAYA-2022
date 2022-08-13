@@ -13,13 +13,8 @@ export default function FotoAtribut({ isMan }) {
   }
 
   const Cewe = () => {
-    return <div className='flex md:flex-row flex-col w-full gap-5'>
-      <div className='mx-auto'>
-        <img className='grow' src='/assets/images/atributCewe1.png'/> 
-      </div>
-      <div className='mx-auto'>
-        <img className='grow' src='/assets/images/atributCewe2.png'/> 
-      </div>
+    return <div className='w-fit my-8 mx-auto'>
+      <img className='grow' src='/assets/images/atributCewe1.png'/> 
     </div>
   }
 
