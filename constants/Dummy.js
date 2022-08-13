@@ -40,13 +40,13 @@ export const SosialMedia = [
 export const AtributData = (isMan) => {
   const Cowok = [
     {
-      text: "Rambut tidak boleh di cat, harus dipotong pendek, tidak bermodel skin hairstyle, rapi dan tidak melebihi leher, telinga, maupun alis.",
+      text: "Rambut tidak boleh dicat, harus dipotong pendek, tidak bermodel skin hairstyle, rapi dan tidak melebihi leher, telinga, maupun alis.",
     },
     {
       text: "Memakai kemeja lengan panjang berwarna putih berkerah berbahan kain (bukan berbahan kaos ataupun jeans), rapi, tidak ketat dan tidak transparan.",
     },
     {
-      text: "Memakai celana penjang berwarna hitam berbahan kain (bukan berbahan kaos ataupun jeans) rapi, tidak ketat, tidak transparan, tidak bermotif bukan cutbray atau skinny.",
+      text: "Memakai celana panjang berwarna hitam berbahan kain (bukan berbahan kaos ataupun jeans) rapi, tidak ketat, tidak transparan, tidak bermotif bukan cutbray atau skinny.",
     },
     {
       text: "Memakai dasi berwarna hitam.",
@@ -70,7 +70,7 @@ export const AtributData = (isMan) => {
       text: "Memakai nametag serta membawa kartu kendali kesehatan selama kegiatan RAJA BRAWIJAYA berlangsung",
     },
     {
-      text: "Bagi mahasiswa baru yang memiliki penyakit kronis seperti jantung, paru-paru, maag kronis dll wajib menyematkan pita berwarna hitam pada bagian kiri lengan.",
+      text: "Bagi mahasiswa baru yang memiliki penyakit kronis seperti jantung, paru-paru, maag kronis, dll wajib menyematkan pita berwarna hitam pada bagian kiri lengan.**",
     },
     {
       text: "Tidak menggunakan perhiasan.",
@@ -137,7 +137,7 @@ export const AtributType = [
     text: "Name Tag",
     data: {
       rules: [
-        "Mahasiswa baru mencetak name tag (format di download)",
+        "Mahasiswa baru mencetak name tag berukuran B4 (15 x 10,5 cm) (format di download)",
         "Name tag dimasukan ke dalam ID Case dengan Tali Id Card (Lanyard) warna biru.",
         "Foto berukuran 3x4 cm menggunakan foto SIAM UB",
       ],
@@ -147,11 +147,11 @@ export const AtributType = [
     },
   },
   {
-    text: "Back Tag",
+    text: "Bag Tag",
     data: {
       rules: [
-        "Mahasiswa baru mencetak bag tag dengan ketentuan yang telah ditetapkan oleh panitia",
-        "Bag tag dimasukan kedalam Id Case berukuran B4 kemudian diikat pada ransel dengan pita berwarna biru",
+        "Mahasiswa baru mencetak name tag berukuran B4 (15 x 10,5 cm) (format di download)",
+        "Bag tag dimasukan kedalam Id Case kemudian diikat pada ransel dengan pita berwarna biru.",
       ],
       image: "/assets/images/BackCard.png",
       download:
@@ -162,10 +162,10 @@ export const AtributType = [
     text: "Kartu Kendali Kesehatan",
     data: {
       rules: [
-        "Mahasiswa membuat kartu kendali dengan ketentuan yang telah ditetapkan oleh panitia",
-        "Kartu kendali kesehatan di print di belakang Name Tag",
-        "Kartu kendali kesehatan bertujuan untuk mengetahui riwayat kesehatan mahasiswa ",
-        "Mahasiswa baru menempelkan foto berukuran 3x4 serta mengisi format kartu kendali ",
+        "Mahasiswa membuat kartu kendali dengan ketentuan yang telah ditetapkan oleh panitia. (Ukuran B4)",
+        "Kartu kendali kesehatan diprint dan ditempel di belakang name tag.",
+        "Kartu kendali kesehatan bertujuan untuk mengetahui riwayat kesehatan mahasiswa baru.",
+        "Mahasiswa baru menempelkan foto berukuran 3x4 (foto SIAM) serta mengisi format kartu kendali sesuai kondisi masing-masing dengan sebenar-benarnya.",
       ],
       image: "/assets/images/KartuKK.png",
       download:
@@ -176,8 +176,8 @@ export const AtributType = [
     text: "Blocknote Catatan Perjuangan",
     data: {
       rules: [
-        "Mahasiswa baru membuat bloknote catatan perjuangan sesuai dengan ketentuan yang ",
-        "Cover bloknote Catatan Perjuangan dicetak dengan ukuran A5",
+        "Mahasiswa baru membuat blocknote catatan perjuangan sesuai dengan ketentuan yang telah ditetapkan panitia.",
+        "Cover blocknote catatan perjuangan dicetak dengan ukuran A5.",
       ],
       image: "/assets/images/BnCard.png",
       download:

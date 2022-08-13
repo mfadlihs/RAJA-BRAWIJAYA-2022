@@ -97,8 +97,12 @@
 	}
 
 	.atribut li {
-		@apply font-open lg:text-2xl sm:text-xl text-lg font-normal;
+		@apply font-open lg:text-2xl sm:text-xl text-lg font-normal ml-6;
 	}
+
+  .atribut .rules { 
+		@apply font-open lg:text-2xl sm:text-xl text-lg font-normal;    
+  }
 
 	/* h1 {
 		@apply lg:text-h1 

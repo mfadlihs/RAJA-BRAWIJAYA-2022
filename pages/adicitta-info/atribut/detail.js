@@ -59,7 +59,7 @@ export default function Atribut() {
                         {AtributType.map((item, index) => {
                           return (
                             <button
-                              className={`px-4 py-2 text-white  bg-yellow hover:bg-orange flex items-center  justify-between w-full`}
+                              className={`px-4 py-2 text-white  bg-yellow hover:bg-orange flex items-center text-start justify-between w-full`}
                               onClick={() => {
                                 setAtributId(index);
                                 setActive(false);

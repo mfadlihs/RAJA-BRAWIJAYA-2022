@@ -12,6 +12,7 @@ import FotoAtribut from "../../../layout/atribut/Foto";
 import SeeOther from "../../../layout/adcittaInfo/SeeOther";
 import { AtributData } from "../../../constants/Dummy";
 import Link from "next/link";
+import Cewe from '../../../layout/atribut/Cewe';
 
 export default function Atribut() {
   const [isMan, setIsMan] = useState(true);
@@ -80,9 +81,9 @@ export default function Atribut() {
                 <div className="absolute w-4/5 h-1 -bottom-2 bg-orange"></div>
               </div>
               <div className="flex-row-reverse items-start mt-8 gap-6">
-                <div className="text-justify">
+                {isMan ? <div className="text-justify">
                   <ol>
-                    {AtributData(isMan).map((item, index) => (
+                    {AtributData(true).map((item, index) => (
                       <>
                         {item.text.charAt(0) === "0" ||
                         item.text.charAt(0) === "1" ||
@@ -107,7 +108,7 @@ export default function Atribut() {
                       </>
                     ))}
                   </ol>
-                </div>
+                </div> : <Cewe/>}
               </div>
               <Link href={"atribut/detail"}>
                 <button
