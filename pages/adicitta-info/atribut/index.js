@@ -45,7 +45,7 @@ export default function Atribut() {
                     RAJA Brawijaya
                   </h2>
                 </div>
-                <div className="bg-orange w-full sm:w-fit hover:bg-orange sm:flex items-center rounded-lg body text-white shadow-2xl">
+                <div className="bg-orange w-full sm:w-fit hover:cursor-pointer hover:bg-orange sm:flex items-center rounded-lg body text-white shadow-2xl">
                   {/* <DownloadOutlined className='mr-3' />
 				Download Twibbon */}
                   <div
