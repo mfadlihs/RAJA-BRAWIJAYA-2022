@@ -105,7 +105,7 @@ export default function Atribut() {
                             target={"_blank"}
                           >
                             <button className="bg-orange px-3 py-2  w-full font-bold items-center text-white flex justify-center hover:bg-yellow rounded-md shadow-md">
-                              <DownloadOutlined /> Download
+                              <DownloadOutlined  /> Download
                             </button>
                           </a>
                         </div>

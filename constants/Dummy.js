@@ -138,7 +138,7 @@ export const AtributType = [
     data: {
       rules: [
         "Mahasiswa baru mencetak name tag berukuran B4 (15 x 10,5 cm) (format di download)",
-        "Name tag dimasukan ke dalam ID Case dengan Tali Id Card (Lanyard) warna biru.",
+        "Name tag dimasukan ke dalam Id Case dengan Tali Id Card (Lanyard) warna biru.",
         "Foto berukuran 3x4 cm menggunakan foto SIAM UB",
       ],
       image: "/assets/images/IdCard.png",
@@ -150,7 +150,7 @@ export const AtributType = [
     text: "Bag Tag",
     data: {
       rules: [
-        "Mahasiswa baru mencetak name tag berukuran B4 (15 x 10,5 cm) (format di download)",
+        "Mahasiswa baru mencetak name tag berukuran panjang 8 cm dan lebar 5 cm (format di download)",
         "Bag tag dimasukan kedalam Id Case kemudian diikat pada ransel dengan pita berwarna biru.",
       ],
       image: "/assets/images/BackCard.png",
@@ -162,14 +162,14 @@ export const AtributType = [
     text: "Kartu Kendali Kesehatan",
     data: {
       rules: [
-        "Mahasiswa membuat kartu kendali dengan ketentuan yang telah ditetapkan oleh panitia. (Ukuran B4)",
+        "Mahasiswa membuat kartu kendali dengan ketentuan yang telah ditetapkan oleh panitia (berukuran B4)",
         "Kartu kendali kesehatan diprint dan ditempel di belakang name tag.",
         "Kartu kendali kesehatan bertujuan untuk mengetahui riwayat kesehatan mahasiswa baru.",
         "Mahasiswa baru menempelkan foto berukuran 3x4 (foto SIAM) serta mengisi format kartu kendali sesuai kondisi masing-masing dengan sebenar-benarnya.",
       ],
       image: "/assets/images/KartuKK.png",
       download:
-        "https://drive.google.com/file/d/1RvkghzEI1zQw-qm8m-AO8CJjLxyqvE4c/view?usp=sharing",
+        "https://drive.google.com/file/d/1wrWq8Cx_4KFd9eLtmOIm1TAPIFkIVYXB/view?usp=sharing",
     },
   },
   {

@@ -31,7 +31,7 @@ export default function SeeOther() {
 
   return (
     <div className="pt-20 ">
-      <HeadingMini top={"Lihat"} bottom=" Lainya" />
+      <HeadingMini top={"Lihat"} bottom=" Lainnya" />
       <div className="flex md:flex-row flex-col  md:space-x-5 h-full items-center pt-5  ">
         <div className="flex-1  md:space-y-2 items-between  justify-between flex md:flex-row flex-col space-y-5  ">
           {newsOther.map((item, index) => {
