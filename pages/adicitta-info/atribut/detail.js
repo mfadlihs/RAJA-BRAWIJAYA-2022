@@ -9,15 +9,24 @@ import { Button } from "@mui/material";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import { AtributType } from "../../../constants/Dummy";
+import { AtributJaringan, AtributType } from "../../../constants/Dummy";
 import { Background } from "../../../constants/Images";
 import SeeOther from "../../../layout/adcittaInfo/SeeOther";
 import FotoAtribut from "../../../layout/atribut/Foto";
 import Nav from "../../../layout/nav/Nav";
-
+const optionDaringLuring = [
+  {
+    label: "Luring",
+  },
+  {
+    label: "Daring",
+  },
+];
 export default function Atribut() {
   const [atributId, setAtributId] = useState(0);
   const [active, setActive] = useState(false);
+  const [activeJaringan, setActiveJaringan] = useState(false);
+  const [luring, setLuring] = useState(0);
   return (
     <>
       <Head>
@@ -33,7 +42,7 @@ export default function Atribut() {
           <div className=" shadow-lg py-20 rounded-md">
             <div className="container relative">
               <div className="p-11 rounded-lg bg-green relative">
-                <div className="hidden lg:block absolute top-0 right-0 aspect-square h-full">
+                <div className="hidden lg:flex absolute top-0 right-0 aspect-square h-full  justify-center ">
                   <img
                     src="/assets/images/BgCard.png"
                     alt="atribut header"
@@ -47,6 +56,34 @@ export default function Atribut() {
                 </div>
                 <div className="relative">
                   <button
+                    className={`px-4 py-2 text-white rounded-lg bg-yellow hover:bg-orange flex items-center md:w-1/3 justify-between w-full my-5`}
+                    onClick={() => setActiveJaringan(!activeJaringan)}
+                  >
+                    {optionDaringLuring[luring].label}
+                    <DownOutlined />
+                  </button>
+                  {activeJaringan && (
+                    <div className="absolute w-full  top-14  z-30 ">
+                      <div className=" bg-yellow shadow-md rounded-md p-2 w-full md:w-1/3">
+                        {optionDaringLuring.map((item, index) => {
+                          return (
+                            <button
+                              className={`px-4 py-2 text-white  bg-yellow hover:bg-orange flex items-center text-start justify-between w-full`}
+                              onClick={() => {
+                                setLuring(index);
+                                setActiveJaringan(false);
+                              }}
+                            >
+                              {item.label}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </div>
+                <div className="relative">
+                  <button
                     className={`px-4 py-2 text-white rounded-lg bg-yellow hover:bg-orange flex items-center md:w-1/3 justify-between w-full`}
                     onClick={() => setActive(!active)}
                   >
@@ -56,7 +93,7 @@ export default function Atribut() {
                   {active && (
                     <div className="absolute w-full  top-14  z-30 ">
                       <div className=" bg-yellow shadow-md rounded-md p-2 w-full md:w-1/3">
-                        {AtributType.map((item, index) => {
+                        {AtributJaringan(!luring).map((item, index) => {
                           return (
                             <button
                               className={`px-4 py-2 text-white  bg-yellow hover:bg-orange flex items-center text-start justify-between w-full`}
@@ -88,9 +125,12 @@ export default function Atribut() {
                       <ol>
                         {AtributType[atributId].data.rules.map(
                           (item, index) => {
-                            if(AtributType[atributId].text == "Pita Cluster Luring"){
-                              if(index==0){
-                                return  <p key={index}>{item}</p>;
+                            if (
+                              AtributType[atributId].text ==
+                              "Pita Cluster Luring"
+                            ) {
+                              if (index == 0) {
+                                return <p key={index}>{item}</p>;
                               }
                             }
                             return <li key={index}>{item}</li>;
@@ -118,8 +158,8 @@ export default function Atribut() {
                             </a>
                           </div>
                         </div>
-                      </div>)}
-
+                      </div>
+                    )}
                   </>
                 ) : (
                   <div>

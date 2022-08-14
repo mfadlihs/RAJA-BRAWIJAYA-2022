@@ -185,9 +185,9 @@ export const AtributType = [
     },
   },
   {
-    text : "Pita Cluster Luring",
-    data : {
-      rules : [
+    text: "Pita Cluster Luring",
+    data: {
+      rules: [
         "PITA WAJIB DIPAKAI DI LENGAN KANAN",
         "Sesi 1: Memakai pita warna kuning",
         "Sesi 2: Memakai pita warna merah",
@@ -197,8 +197,8 @@ export const AtributType = [
         "Sesi 6: Memakai pita warna merah",
         "Sesi 7: Memakai pita warna hijau",
         "Sesi 8: Memakai pita warna biru",
-      ]
-    }
+      ],
+    },
   },
   {
     text: "Ketentuan Tambahan",
@@ -276,4 +276,11 @@ export const PreviewAtribut = (isMan) => {
     return cowok;
   }
   return cewek;
+};
+export const AtributJaringan = (offline) => {
+  if (offline) {
+    return AtributType;
+  } else {
+    return [AtributType[0], AtributType[2], AtributType[3]];
+  }
 };
