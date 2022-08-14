@@ -5,6 +5,7 @@ import Head from "next/dist/shared/lib/head";
 import AdicittaCard from "../../layout/adcittaInfo/AdicittaCard";
 import HeadingMini from "../../component/heading/HeadingMini";
 import AdicittaCardMini from "../../layout/adcittaInfo/AdicittaCardMini";
+import LoadingPage from '../../component/LoadingPage';
 import { apiNews } from "../../lib/api";
 import { useEffect, useState } from "react";
 
@@ -32,7 +33,8 @@ export default function AdiciittaInfo() {
 		day = day.split("T")[0];
 		return `${day}-${month}-${year}`;
 	};
-	return (
+	return (<>
+    {news.length === 0 ? <LoadingPage/> : 
 		<>
 			<Head>
 				<title>RAJA Brawijaya 2022 | Adicitta Info</title>
@@ -145,6 +147,7 @@ export default function AdiciittaInfo() {
 					)}
 				</div>
 			</div>
-		</>
+		</>}
+    </>
 	);
 }
