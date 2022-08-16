@@ -24,15 +24,11 @@ export default function Index() {
 								<div className='absolute w-4/5 h-1 -bottom-2 bg-orange'></div>
 							</div>
 							<p className=''>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget mi mauris
-								vulputate in amet natoque malesuada id. Felis tellus sed mauris posuere
-								convallis. Ut arcu ridiculus at luctus tellus. Dolor quis ipsum hac mi
-								at dictumst. Leo bibendum tincidunt varius sit eget. Arcu suspendisse
-								dui lacus venenatis fames vestibulum ullamcorper nisi. A eget sed tortor
-								nibh id. Tortor a malesuada scelerisque amet. Cras tellus in placerat
-								risus, urna interdum pretium venenatis velit. Urna, tristique phasellus
-								nulla rutrum volutpat id morbi neque. Viverra egestas nisi sed integer
-								lacus, magna erat.
+								Halo, Adicitta 60! Buku panduan dapat menjadi panduan bagi Mahasiswa
+								Baru dalam pelaksanaan PKKMB. Buku panduan ini bertujuan untuk
+								memberikan segala informasi mengenai mekanisme dan pelaksanaan PPKMB
+								RAJA Brawijaya 2022. Segala informasi mengenai PKKMB dapat diakses
+								Mahasiswa Baru Universitas Brawijaya.
 							</p>
 							<img
 								src='/assets/images/Feather.png'

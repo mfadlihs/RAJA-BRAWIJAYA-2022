@@ -12,16 +12,24 @@ import { motion } from "framer-motion";
 import { apiVidio } from "../../lib/api";
 const initialState = [
 	{
-		link: "9wIk3nQhtmg",
+		link: "8T7syCDLytA",
 		title: "Sambutan Rektor",
 	},
 	{
-		link: "SJXdAxNX0Ow",
-		title: "OPEN HOUSE RAJA BRAWIJAYA 2021",
+		link: "QSXYlrcKPa4",
+		title: "Teaser RAJA BRAWIJAYA 2022",
 	},
 	{
-		link: "SJXdAxNX0Ow",
-		title: "OPEN HOUSE RAJA BRAWIJAYA 2021",
+		link: "OaxknaaEtjY",
+		title: "Sidak Mahasiswa Universitas Brawijaya",
+	},
+	{
+		link: "04eVOzp7FFk",
+		title: "Koreo Flashmob Gelora Brawijaya",
+	},
+	{
+		link: "BAc0cW51cQ8",
+		title: "Jingle RAJA BRAWIJAYA 2022",
 	},
 ];
 

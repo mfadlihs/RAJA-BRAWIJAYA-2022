@@ -14,7 +14,7 @@ export default function Loading() {
 				}}
 				className='w-10'
 			>
-				<Image
+				<img
 					src={"/assets/icons/loading.svg"}
 					layout='responsive'
 					width={1}
