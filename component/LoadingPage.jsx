@@ -30,21 +30,12 @@ export default function LoadingPage() {
 					}}
 				/>
 
-				<motion.h1
-					animate={{
-						scale: [1.2, 1, 1.2],
-					}}
-					transition={{
-						duration: 4,
-						repeat: Infinity,
-					}}
-					className='text-center mt-4 py-2 text-blue font-agrandir font-bold  text-2xl md:text-4xl sm:text-3xl lg:text-5xl'
-				>
+				<div className='text-center text- mt-4 py-2 text-blue font-agrandir font-bold  text-2xl md:text-4xl sm:text-3xl lg:text-5xl'>
 					Tau gak persamaan webnya sama dia?
 					<br />
 					<span className='text-orange'>sama sama lama nungguinnya</span>
-				</motion.h1>
-				<div>
+				</div>
+				<div className='text-blue text-center font-agrandir'>
 					*Maafin yaa webnya lagi ngedown, ini lagi disemangatin sama tim IT biar
 					cepet balik normal
 				</div>
