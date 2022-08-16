@@ -119,7 +119,7 @@ export default function AdiciittaInfo() {
 								</div>
 							</div>
 							{news.length > 5 && (
-								<div className='container pt-20  '>
+								<div className='container pt-10  '>
 									{/* <HeadingMini top={"Adicitta"} bottom=" Lama" /> */}
 									<div className='flex md:flex-row flex-col  md:space-x-5 h-full items-center pt-5 '>
 										<div className='flex-1  md:space-y-2 items-between  justify-between '>

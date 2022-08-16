@@ -12,7 +12,6 @@ export default function AdicittaCardMini({
 	thumbnail,
 	item,
 }) {
-	console.log(item);
 	return (
 		<div className='p-2 rounded-lg bg-white shadow-sm cursor-pointer aspect-square'>
 			<Link
