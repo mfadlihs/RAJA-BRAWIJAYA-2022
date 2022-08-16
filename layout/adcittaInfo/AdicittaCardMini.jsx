@@ -51,12 +51,11 @@ export default function AdicittaCardMini({
 						</div>
 						<div className='bg-yellow w-full h-0 group-hover:h-full absolute bottom-0 right-0 bg-opacity-30 ' />
 					</div>
-					<div className='px-5 text-primary py-2'>
+					<div className='px-2 text-primary py-2'>
 						<h3 className=' font-semibold text-2xl'>{title}</h3>
-						<div
-							className='text-base text-ellipsis'
-							dangerouslySetInnerHTML={{ __html: descipriton }}
-						></div>
+						<div className='text-base text-ellipsis overflow-hidden'>
+							{descipriton.replace(/<\/?[^>]+(>|$)/g, "").slice(0, 150)} ....
+						</div>
 					</div>
 				</div>
 			</Link>

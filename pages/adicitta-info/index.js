@@ -16,6 +16,7 @@ export default function AdiciittaInfo() {
 		apiNews()
 			.then(res => {
 				setNews(res.data);
+				console.log(res.data);
 			})
 			.catch(err => {
 				console.log(err);
@@ -24,6 +25,7 @@ export default function AdiciittaInfo() {
 				setLoading(false);
 			});
 	}, []);
+
 	// date form database to indonesia format
 	const date = date => {
 		const dateSplit = date.split("-");
@@ -45,7 +47,7 @@ export default function AdiciittaInfo() {
 
 					<Nav variant='white' />
 
-					<div className='after:candiHijau h-screen relative pt-24 pb-20'>
+					<div className='after:candiHijau min-h-screen relative pt-24 pb-20'>
 						<div>
 							<div className='md:w-[50vw] h-full mx-4 md:mx-auto drop-shadow-md'>
 								<Image
@@ -69,18 +71,18 @@ export default function AdiciittaInfo() {
 							<div className='container pt-20 '>
 								{/* <HeadingMini top={"Adicitta"} bottom=" Baru" /> */}
 								<div className='flex lg:flex-row flex-col  lg:space-x-5 h-full items-center pt-5 '>
-									<div className='lg:w-1/2   h-full '>
+									<div className='lg:w-1/2 basis-1/2  h-full '>
 										{news.length > 0 && (
 											<AdicittaCard
 												title={news[0].title}
-												descipriton={news[0].description}
+												descipriton={news[0].summary}
 												thumbnail={news[0].thumbnail}
 												slug={news[0].slug}
 												tanggal={date(news[0].created_at)}
 											/>
 										)}
 									</div>
-									<div className='flex-1   md:space-y-2 items-between '>
+									<div className='flex-1 basis-1/2 md:space-y-2 items-between '>
 										<div className='flex flex-1 md:space-x-5 md:flex-row flex-col '>
 											{news.map((item, index) => {
 												if (index > 0 && index < 3) {
@@ -88,7 +90,7 @@ export default function AdiciittaInfo() {
 														<div className='md:w-1/2 md:h-1/2'>
 															<AdicittaCardMini
 																title={item.title}
-																descipriton={item.description}
+																descipriton={item.summary}
 																thumbnail={item.thumbnail}
 																slug={item.slug}
 																tanggal={date(item.created_at)}
@@ -105,7 +107,7 @@ export default function AdiciittaInfo() {
 														<div className='md:w-1/2 md:h-1/2'>
 															<AdicittaCardMini
 																title={item.title}
-																descipriton={item.description}
+																descipriton={item.summary}
 																thumbnail={item.thumbnail}
 																slug={item.slug}
 																tanggal={date(item.created_at)}
@@ -119,7 +121,7 @@ export default function AdiciittaInfo() {
 								</div>
 							</div>
 							{news.length > 5 && (
-								<div className='container pt-10  '>
+								<div className='container'>
 									{/* <HeadingMini top={"Adicitta"} bottom=" Lama" /> */}
 									<div className='flex md:flex-row flex-col  md:space-x-5 h-full items-center pt-5 '>
 										<div className='flex-1  md:space-y-2 items-between  justify-between '>
@@ -134,7 +136,7 @@ export default function AdiciittaInfo() {
 															<div className='sm:w-1/3'>
 																<AdicittaCardMini
 																	title={item.title}
-																	descipriton={item.description}
+																	descipriton={item.summary}
 																	thumbnail={item.thumbnail}
 																	slug={item.slug}
 																	tanggal={date(item.created_at)}

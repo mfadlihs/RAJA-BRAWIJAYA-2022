@@ -17,12 +17,12 @@ export default function AdicittaCard({
 				className={`rounded-lg bg-white ${style.addicitaCard} pb-5 group`}
 				href={slug ? `/adicitta-info/${slug}` : "/adicitta-info"}
 			>
-				<div className='flex flex-col'>
+				<div className='flex flex-col '>
 					<div className='flex justify-between items-center w-full  px-5 pt-1'>
 						<div className='flex items-center drop-shadow-md'>
 							<div className='w-16 h-16'>
 								<div className=' w-9/12 h-9/12   '>
-									<img
+									<Image
 										src={Icons.Raja}
 										layout='responsive'
 										objectFit='contain'
@@ -44,16 +44,16 @@ export default function AdicittaCard({
 							/>
 						</div>
 					</div>
-					<div className='relative '>
+					<div className='relative h-1/2'>
 						<div className=' w-full h-full bg-yellow rounded-md '>
-							<img src={thumbnail} alt='thumbnail' className='w-full h-64' />
+							<img src={thumbnail} alt='thumbnail' className='w-full h-full' />
 						</div>
 						<div className='bg-yellow w-full h-0 group-hover:h-full absolute bottom-0 right-0 bg-opacity-30 ' />
 					</div>
 					<div className='px-5 text-primary py-2'>
 						<h3 className=' font-semibold'>{title}</h3>
-						<h5 className='text-sm' dangerouslySetInnerHTML={{ __html: descipriton }}>
-							{}
+						<h5 className='text-base'>
+							{descipriton.replace(/<\/?[^>]+(>|$)/g, "").slice(0, 150)} ....
 						</h5>
 					</div>
 				</div>
