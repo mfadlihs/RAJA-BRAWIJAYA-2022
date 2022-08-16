@@ -1,4 +1,5 @@
 import { DownloadOutlined } from "@ant-design/icons";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Header() {
@@ -23,9 +24,18 @@ export default function Header() {
 					</a>
 				</Link>
 			</div>
-			<div className='hidden md:block absolute w-[60%] -right-5 -top-10'>
+			<motion.div
+				animate={{
+					scale: [1.2, 1, 1.2],
+				}}
+				transition={{
+					duration: 2,
+					repeat: Infinity,
+				}}
+				className='hidden md:block absolute w-[60%] -right-20 -top-10'
+			>
 				<img src='/assets/images/panduan.png' className='' />
-			</div>
+			</motion.div>
 		</div>
 	);
 }

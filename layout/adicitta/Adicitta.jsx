@@ -31,7 +31,7 @@ export default function Adicitta() {
 								<List img={"/assets/icons/icAtribut.svg"} name='Atribut' />
 							</div>
 						</Link>
-						<Link href={"/comingsoon"}>
+						<Link href={"/adicitta-info/panduan"}>
 							<div className='mx-auto md:w-full lg:mx-10 md:mx-3 mt-4 md:mt-0'>
 								<List img={"/assets/icons/icPanduan.svg"} name='Panduan' />
 							</div>
