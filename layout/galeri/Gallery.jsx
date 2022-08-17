@@ -12,7 +12,7 @@ export default function Gallery() {
 
 	return (
 		<div>
-			<div className='md:hidden'>
+			<div className='md:hidden pt-24'>
 				<div className='max-w-md sm:mb-2 mb-1 md:mb-4 mx-auto drop-shadow-md'>
 					<Image
 						src={Pattern.HeadingFull}
@@ -33,14 +33,14 @@ export default function Gallery() {
 					/>
 				</div>
 			</div>
-			<div className='md:flex block h-screen w-screen overflow-hidden md:px-24'>
-				<div className='flex flex-col justify-between md:h-full md:py-16 mb-24 md:mb-0 '>
+			<div className='md:flex block md:h-screen w-screen overflow-hidden md:pl-12 lg:pl-24'>
+				<div className='flex flex-col justify-between md:h-full md:py-16 mb-8 md:mb-0 '>
 					<div className='flex justify-center grow md:items-center'>
 						<div className='flex items-center gap-5'>
 							<Item active={isVideo} setIsVideo={setIsVideo} video={true}>
 								Video
 							</Item>
-							<div className='w-4 h-4 bg-blue rounded-full'></div>
+							<div className='md:w-4 md:h-4 w-2 h-2 bg-blue rounded-full'></div>
 							<Item active={!isVideo} setIsVideo={setIsVideo} video={false}>
 								Foto
 							</Item>
@@ -52,19 +52,15 @@ export default function Gallery() {
 						RAJA Brawijaya 2022
 					</div>
 				</div>
-				<div className='grow'>
-					<div className='h-full overflow-hidden'>
-						<div className=''>
-							<div className='w-fit space-x-20 mx-auto hidden md:block'>
-								<GallerySlider />
-								<GallerySlider reverse />
-							</div>
-							<div className='w-fit space-y-20 mx-auto md:hidden'>
-								<GallerySliderMb />
-								<GallerySliderMb reverse />
-								<GallerySliderMb />
-							</div>
-						</div>
+				<div className='w-fit h-full grow overflow-hidden'>
+					<div className='hidden md:flex space-x-2 px-3 justify-around'>
+						<GallerySlider start={0} end={4} />
+						<GallerySlider reverse start={5} end={9} />
+					</div>
+					<div className='w-fit pb-8 space-y-5 mx-auto md:hidden'>
+						<GallerySliderMb start={0} end={4} />
+						<GallerySliderMb reverse start={3} end={7} />
+						<GallerySliderMb start={5} end={9} />
 					</div>
 				</div>
 			</div>

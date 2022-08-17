@@ -110,6 +110,9 @@ export default function Nav({ bg, variant }) {
 						<Navlink variant={variant} show={show} To={"/peta_brawijaya"}>
 							Peta Brawijaya
 						</Navlink>
+						<Navlink variant={variant} show={show} To={"/galeri"}>
+							Galeri
+						</Navlink>
 						<Navlink variant={variant} show={show} To={"/faq"}>
 							FAQ
 						</Navlink>

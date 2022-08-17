@@ -17,11 +17,11 @@
 }
 
 .slideTrack {
-	animation: scroll 5s linear infinite;
+	animation: scroll 20s linear infinite;
 }
 
 .slideTrackReverse {
-	animation: scrollReverse 5s linear infinite;
+	animation: scrollReverse 20s linear infinite;
 }
 
 @keyframes scrollMobile {
@@ -43,9 +43,9 @@
 }
 
 .slideTrackMobile {
-	animation: scrollMobile 5s linear infinite;
+	animation: scrollMobile 40s linear infinite;
 }
 
 .slideTrackReverseMobile {
-	animation: scrollReverseMobile 5s linear infinite;
+	animation: scrollReverseMobile 40s linear infinite;
 }

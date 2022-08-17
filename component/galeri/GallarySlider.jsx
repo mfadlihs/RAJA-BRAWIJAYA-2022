@@ -1,72 +1,50 @@
 import style from "./style.module.css";
+import { GaleriImage } from "../../constants/galeri";
+import Image from "next/image";
 
-export default function GallerySlider({ reverse }) {
+export default function GallerySlider({ reverse, start, end }) {
 	return (
 		<div
-			className={`w-32 space-y-[40px] ${
+			className={`space-y-32 ${
 				reverse ? style.slideTrackReverse : style.slideTrack
 			} inline-block`}
 		>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-blue' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-slate-600' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-yellow' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-gray-900' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-zinc-700' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-stone-500' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-red-400' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-lime-600' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-amber-500' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-emerald-500' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-blue' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-slate-600' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-yellow' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-gray-900' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-zinc-700' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-stone-500' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-red-400' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-lime-600' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-amber-500' />
-			</div>
-			<div className='slider'>
-				<div className='w-32 h-32 bg-emerald-500' />
-			</div>
+			{GaleriImage.map((item, index) => {
+				if (index >= start && index <= end) {
+					return (
+						<div className='slider'>
+							<div className='aspect-[7/9] rounded-3xl shadow-2xl overflow-clip max-w-[270px]'>
+								<img
+									loading='lazy'
+									src={item.url}
+									className='object-cover w-full h-full'
+								/>
+							</div>
+						</div>
+					);
+				}
+			})}
+			{GaleriImage.map((item, index) => {
+				if (index >= start && index <= end) {
+					return (
+						<div className='slider'>
+							<div className='aspect-[7/9] rounded-3xl shadow-2xl overflow-clip max-w-[270px]'>
+								<img
+									loading='lazy'
+									src={item.url}
+									className='object-cover w-full h-full'
+								/>
+							</div>
+						</div>
+					);
+				}
+			})}
 		</div>
 	);
 }
+
+/*
+${
+				reverse ? style.slideTrackReverse : style.slideTrack
+			}
+*/
