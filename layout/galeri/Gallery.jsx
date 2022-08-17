@@ -8,7 +8,7 @@ import { Pattern } from "../../constants/Images";
 import GallerySliderMb from "../../component/galeri/GallerySliderMb";
 
 export default function Gallery() {
-	const [isVideo, setIsVideo] = useState(true);
+	const [isVideo, setIsVideo] = useState(false);
 
 	return (
 		<div>
@@ -37,9 +37,9 @@ export default function Gallery() {
 				<div className='flex flex-col justify-between md:h-full md:py-16 mb-8 md:mb-0 '>
 					<div className='flex justify-center grow md:items-center'>
 						<div className='flex items-center gap-5'>
-							<Item active={isVideo} setIsVideo={setIsVideo} video={true}>
+							{/* <Item active={isVideo} setIsVideo={setIsVideo} video={true}>
 								Video
-							</Item>
+							</Item> */}
 							<div className='md:w-4 md:h-4 w-2 h-2 bg-blue rounded-full'></div>
 							<Item active={!isVideo} setIsVideo={setIsVideo} video={false}>
 								Foto
