@@ -47,7 +47,7 @@ export default function Gallery() {
 						</div>
 					</div>
 					<div className='hidden md:block font-agrandir text-3xl font-normal'>
-						Video rangkaian acara
+						Foto rangkaian acara
 						<br />
 						RAJA Brawijaya 2022
 					</div>
