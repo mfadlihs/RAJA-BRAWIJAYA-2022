@@ -97,7 +97,7 @@ export default function Nav({ bg, variant }) {
 					</div>
 
 					<div
-						className={`flex lg:static grow justify-between fixed flex-col lg:flex-row top-0 bottom-0 ${
+						className={`flex lg:static grow lg:justify-between fixed flex-col lg:flex-row top-0 bottom-0 ${
 							show ? "left-20 right-0" : "left-full -right-10"
 						} px-8 bg-grey lg:bg-trans top-[80px] md:top-[90px] transition-all duration-500`}
 					>
