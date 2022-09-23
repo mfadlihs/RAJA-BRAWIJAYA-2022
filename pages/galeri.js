@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Pattern } from "../constants/Images";
 import Gallery from "../layout/galeri/Gallery";
 import Splash from "../layout/galeri/Splash";
+import { Head } from "next/document";
 
 export default function GalleryPage() {
 	const [isContent, setIsContent] = useState(false);
@@ -16,6 +17,9 @@ export default function GalleryPage() {
 
 	return (
 		<>
+			<Head>
+				<title>RAJA Brawijaya 2022 | Galeri</title>
+			</Head>
 			<Nav variant={"white"} />
 			<div className='after:candiHijau'>
 				{isContent ? <Gallery /> : <Splash />}
