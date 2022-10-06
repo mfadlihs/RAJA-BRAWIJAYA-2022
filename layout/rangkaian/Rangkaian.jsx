@@ -37,7 +37,7 @@ export default function Rangkaian() {
 					<RangkaianSlide
 						img='/assets/images/icOH.png'
 						name='Open House'
-						date='Coming Soon'
+						date='22 Agustus - 23 Agustus 2022'
 					>
 						OH merupakan kegiatan penutup dari rangkaian acara RAJA Brawijaya
 						dimana mahasiswa baru dapat mengenal dan memilih LKM atau UKM yang
