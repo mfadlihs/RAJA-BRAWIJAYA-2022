@@ -10,10 +10,10 @@ export default function LoadingPage() {
 				<title>RAJA Brawijaya 2022</title>
 			</Head>
 			<div className='h-screen flex justify-center items-center flex-col'>
-				<div className=' w-full h-full absolute flex-row overflow-hidden opacity-10 drop-shadow-md'>
+				<div className=' w-full h-screen absolute flex-row overflow-hidden opacity-10 drop-shadow-md'>
 					<Image
 						src={Background.CandiHijau}
-						layout='responsive'
+						layout='fill'
 						objectFit='cover'
 						alt='RAJA Brawijaya'
 					/>
@@ -36,8 +36,8 @@ export default function LoadingPage() {
 					<span className='text-orange'>sama sama lama nungguinnya</span>
 				</div>
 				<div className='text-blue text-center font-agrandir'>
-					*Maafin yaa webnya lagi ngedown, ini lagi disemangatin sama tim IT biar
-					cepet balik normal
+					*Maafin yaa webnya lagi ngedown, ini lagi disemangatin sama tim IT
+					biar cepet balik normal
 				</div>
 			</div>
 		</>
