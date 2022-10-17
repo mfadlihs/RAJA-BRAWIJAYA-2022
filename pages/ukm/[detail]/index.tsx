@@ -1,7 +1,11 @@
 import dynamic from "next/dynamic";
+import Nav from "@/layout/nav/Nav";
+import LoadingPage from "@/component/LoadingPage";
 
-function UkmPageDetail() {
-	return <div>ini detail ukm ygy</div>;
+const UkmDetailRoutes = dynamic(() => import("@/routes/ukm/[detail]"), {
+	loading: () => <LoadingPage />,
+});
+
+export default function UkmDetail() {
+	return <UkmDetailRoutes />;
 }
-
-export default UkmPageDetail;

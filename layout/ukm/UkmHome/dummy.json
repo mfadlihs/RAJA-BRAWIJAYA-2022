@@ -1,0 +1,22 @@
+[
+	{
+		"category": "KESEJAHTERAAN",
+		"content": ["UAB", "UABV", "UABT", "UAKI", "UB"]
+	},
+	{
+		"category": "PENALARAN",
+		"content": ["UAB", "UABV", "UABT", "UAKI", "UB"]
+	},
+	{
+		"category": "KESENIAN",
+		"content": ["UAB", "UABV", "UABT", "UAKI", "UB"]
+	},
+	{
+		"category": "KHUSUS",
+		"content": ["UAB", "UABV", "UABT", "UAKI", "UB"]
+	},
+	{
+		"category": "OLAHRAGA",
+		"content": ["UAB", "UABV", "UABT", "UAKI", "UB"]
+	}
+]

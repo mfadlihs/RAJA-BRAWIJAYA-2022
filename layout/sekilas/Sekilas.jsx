@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import style from "./style.module.css";
-import YouTube from "react-youtube";
 import { Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
@@ -69,7 +68,10 @@ export default function Sekilas() {
 					<div role='status' className='w-full animate-pulse space-y-5 mt-5'>
 						<div className='flex items-center space-x-2 w-full'>
 							{Array.from(Array(2).keys()).map(i => (
-								<div className='flex flex-col  w-full relative space-y-2'>
+								<div
+									key={i}
+									className='flex flex-col  w-full relative space-y-2'
+								>
 									<div className='h-80 bg-gray-200 rounded-xl dark:bg-gray-500 w-full'></div>
 									<div className='h-10 bg-gray-200 rounded-xl dark:bg-gray-500 w-full'></div>
 								</div>
@@ -78,7 +80,10 @@ export default function Sekilas() {
 						<div className='h-3 bg-gray-200 rounded-xl dark:bg-gray-500 w-full'></div>
 						<div className='flex flex-row justify-between'>
 							{Array.from(Array(2).keys()).map(i => (
-								<div className='h-4 bg-gray-200 rounded-lg dark:bg-gray-500 w-1/12 '></div>
+								<div
+									key={i}
+									className='h-4 bg-gray-200 rounded-lg dark:bg-gray-500 w-1/12 '
+								></div>
 							))}
 						</div>
 					</div>

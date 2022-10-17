@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { DownloadOutlined } from "@ant-design/icons";
-import { Button } from "@mui/material";
 {
 	/* <DownloadOutlined />; */
 }
@@ -25,7 +24,7 @@ export default function Header() {
 			<div className='bg-orange w-fit hover:bg-orange flex items-center rounded-lg body text-white shadow-2xl'>
 				{/* <DownloadOutlined className='mr-3' />
 				Download Twibbon */}
-				<Button
+				<button
 					className={`py-3 px-6 text-white rounded-lg ${
 						isMan && "bg-yellow hover:bg-yellow"
 					}`}
@@ -37,8 +36,8 @@ export default function Header() {
 					}}
 				>
 					Laki-Laki
-				</Button>
-				<Button
+				</button>
+				<button
 					className={`py-3 px-6 text-white rounded-lg ${
 						!isMan && "bg-yellow hover:bg-yellow"
 					}`}
@@ -47,7 +46,7 @@ export default function Header() {
 					}}
 				>
 					Perempuan
-				</Button>
+				</button>
 			</div>
 		</div>
 	);

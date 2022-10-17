@@ -1,0 +1,68 @@
+{
+	"title": "Merpati Putih Universitas Brawijaya",
+	"description": "PPS Betako (Perguruan Pencak Silat Beladiri Tangan Kosong) Merpati Putih berasal dari seni beladiri keluarga keraton, termasuk diantaranya adalah Pangeran Diponegoro yang pada awalnya seni beladiri ini hanya diajarkan kepada KOPASUS dan Pasukan Pengawal Kepresidenan (Paspampres). UKM PPS Betako Merpati Putih Universitas Brawijaya didirikan pada tanggal 4 April 1987. Berdirinya Merpati Putih Universitas Brawijaya (MP UB) diprakarsai oleh para Angkatan Perintis.\n\nLatihan pada Merpati Putih antara lain tata gerak (geraka serangan, pukulan, hindaran serta berbagai gerak khas Merpati Putih), tata perkelahian bebas/fight (teknik-teknik perkelahian bebas dengan bentuk serangan tangan, kaki, jatuhan/bantingan, serang-bela dan pola langkah dengan kaidah-kaidah Pencak Silat), dan tata nafas. Tata nafas sendiri meliputi bentuk Pengolahan dan 4 bentuk Pembinaan, latihan ini melatih tenaga asli manusia. Maka, di dalam Pencak Silat ini diajarkan bagaimana menggunakan tenaga ekstra asli manusia tersebut pada saat normal kapapun dan dimanapun.\n\nTujuan dari latihan ini untuk melatih tenaga murni yang ada di dalam setiap tubuh manusia untuk dapat ditingkatkan dan dipergunakan/diaplikasikan, sehingga diharapkan kemampuan/kekuatan anggota MP melebihi kekuatan manusia normal, hal ini dapat dibuktikan pada aplikasi pematahan benda-benda keras seperti beton cor, stang pompa dragon, kikir, balok es, batu kali, dsb. Dapat dijelaskan secara ilmiah bahwa latihan nafas di Merpati Putih yaitu mengolah ATP (Adenosin Tri Phospat) menjadi ADP (Adenosin Di Phosphat) + Energi yang bersifat explosif, sehingga benar-benar mengolah energi tubuh dengan tanpa isian tenaga dalam, tanpa magic/mantra/dupa sehingga bebas dari hal-hal bersifat syirik. Jadi, terlihat perbedaan Merpati Putih dengan latihan tenaga dalam pada umumnya karena dalam beladiri ini yang ada hanyalah tenaga murni.",
+	"activity": [
+		{
+			"title": "Latihan Rutin & Latihan Alam",
+			"content": "Latihan sesuai tingkatan yang diadakan rutin 3x seminggu dan latihan alam biasa dilakukan bersama pesilat sekota malang 1x 6bulan dimana kita latihan dan berkegiatan di alam bersama."
+		},
+		{
+			"title": "Kejuaraan & Ujian Kenaikan Tingkat",
+			"content": "Latihan menjurus ketika ada kejuaraan, dilakukan sesuai kategori yang dipilih ada fight, seni, power dan getaran serta ujian kenaikan tingkat dimana pesilat yang sudah dinilai siap oleh pelatih akan melakukan persiapan ujian kenaikan tingkat dan mengikuti ujiannya."
+		},
+		{
+			"title": "Diklat, Makan Akrab, Dll",
+			"content": "Latihan sesuai tingkatan yang diadakan Pendidikan dan latihan, bercengkrama bersama, dan masih banyak kegiatan seru lainnya dimana ini adalah organisasi basis kekeluargaan dimana kegiatan ukm tidak hanya."
+		}
+	],
+	"achievment": [
+		"Juara Umum -2 Kejuaraan Nasional Merpati Putih IPB Open,2014",
+		"Juara 1 Kategori Tanding Mahasiswa Kelas G Putra - Kejuaraan Nasional Merpati Putih IPB Open Tahun 2014",
+		"Juara 2 Kategori Getaran Putra - Kejuaraan Nasional Atmajaya Terbuka Tahun 2015",
+		"Juara 1 Kategori Tanding Kelas B Putri - Kejuaraan Nasional Terbuka Universitas Brawijaya Tahun 2016",
+		"Juara 1 Kategori Stamina Tenaga Putri Tingkat Balik- Kejuaraan Nasional IV di Bogor Tahun 2018",
+		"Juara 2 Kategori Tanding Kelas B Putra - Kejuaraan Nasional Brawijaya II Tahun 2019",
+		"Juara 3 Kategori Getaran Putri Tingkat Balik - Kejuaraan Nasional Brawijaya II Tahun 2019",
+		"Juara 2 Kategori Staga Putra Tingkat Kombinasi - Kejuaraan Nasional Brawijaya II Tahun 2019"
+	],
+	"faq": [
+		{
+			"question": "Apa itu PPS BETAKO Merpati Putih?",
+			"answer": "Yo ndak tau, ya jangan tanya saya. tanya anak merpati putih dong wkkw"
+		},
+		{
+			"question": "Apa itu PPS BETAKO Merpati Putih?",
+			"answer": "Yo ndak tau, ya jangan tanya saya. tanya anak merpati putih dong wkkw"
+		},
+		{
+			"question": "Apa itu PPS BETAKO Merpati Putih?",
+			"answer": "Yo ndak tau, ya jangan tanya saya. tanya anak merpati putih dong wkkw"
+		},
+		{
+			"question": "Apa itu PPS BETAKO Merpati Putih?",
+			"answer": "Yo ndak tau, ya jangan tanya saya. tanya anak merpati putih dong wkkw"
+		}
+	],
+	"social": {
+		"wa": {
+			"icon": "ukm-wa",
+			"text": "08176031787 (Mas Syarif), 081243066137 (Mba Lina)"
+		},
+		"line": {
+			"icon": "ukm-line",
+			"text": "Merpati Putih UB"
+		},
+		"instagram": {
+			"icon": "ukm-ig",
+			"text": "merpatiputih_ub"
+		},
+		"web": {
+			"icon": "ukm-web",
+			"text": "http://merpatiputih.ub.ac.id/"
+		},
+		"zoom": {
+			"icon": "ukm-zoom",
+			"text": "https://zoom.us/meetings"
+		}
+	}
+}

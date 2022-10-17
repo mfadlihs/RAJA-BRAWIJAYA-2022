@@ -17,4 +17,5 @@ export const Icons = {
 	Spotify: require("../public/assets/icons/Spotify.png"),
 	Share: require("../public/assets/images/Share.png"),
 	Raja: require("../public/assets/images/Raja.png"),
+	ukmIcon: require("@/public/assets/images/ukm/logo.svg"),
 };

@@ -8,15 +8,12 @@ import Alert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
 import { useEffect, useRef, useState } from "react";
 import SeeOther from "../../../layout/adcittaInfo/SeeOther";
-// import Clipboard from "clipboard";
 export default function Index() {
 	const [name, setName] = useState("");
 	const [fakultas, setFakultas] = useState("");
 
 	const captionRef = useRef(null);
-	// useEffect(() => {
-	//   new Clipboard(".clipboard-btn");
-	// }, []);
+
 	return (
 		<>
 			<Head>
@@ -36,9 +33,9 @@ export default function Index() {
 								Halo Adiccita 60!
 								<br />
 								<br />
-								Ayo ikut ramaikan kegiatan RAJA BRAWIJAYA 2022 dengan mengunduh twibbon
-								yang telah tersedia dan mengunggah di akun instagram kalian
-								masing-masing ya!!
+								Ayo ikut ramaikan kegiatan RAJA BRAWIJAYA 2022 dengan mengunduh
+								twibbon yang telah tersedia dan mengunggah di akun instagram
+								kalian masing-masing ya!!
 							</p>
 						</div>
 						<div className='container relative'>
@@ -72,19 +69,20 @@ export default function Index() {
 									[Sura Dira Jayaningrat, Lebur Dening Pangastuti]
 									<br />
 									<br />
-									Bulan menuju hari, hingga kini hitungan detik dapat dihitung jari.
-									Segala bentuk perjuangan sudah sepatutnya mendapat penghargaan. Segala
-									tindakan sudah sepantasnya menagih pertanggungjawaban. Selayaknya
-									mahasiswa yang menyandang gelar “MAHA” di atas kata “SISWA”.
+									Bulan menuju hari, hingga kini hitungan detik dapat dihitung
+									jari. Segala bentuk perjuangan sudah sepatutnya mendapat
+									penghargaan. Segala tindakan sudah sepantasnya menagih
+									pertanggungjawaban. Selayaknya mahasiswa yang menyandang gelar
+									“MAHA” di atas kata “SISWA”.
 									<br />
 									<br />
-									Gelora Brawijaya Muda melangkah pasti menggapai mimpi di kampus biru,
-									kampus perjuangan, Universitas Brawijaya.
+									Gelora Brawijaya Muda melangkah pasti menggapai mimpi di
+									kampus biru, kampus perjuangan, Universitas Brawijaya.
 									<br />
 									<br />
 									Saya {name === "" ? "[Nama Lengkap]" : name} dari{" "}
-									{fakultas === "" ? "[Fakultas]" : fakultas} Adicitta 60 dengan berani
-									menapaki cakrawala, siap mengikuti RAJA Brawijaya 2022
+									{fakultas === "" ? "[Fakultas]" : fakultas} Adicitta 60 dengan
+									berani menapaki cakrawala, siap mengikuti RAJA Brawijaya 2022
 									<br />
 									<br />
 									Bersinergi Meraih Prestasi Dengan Langkah Penuh Aksi
@@ -107,7 +105,10 @@ export default function Index() {
 									<br />
 								</p>
 								<div className='absolute top-4 right-4'>
-									<IconButton className='clipboard-btn' data-clipboard-target='#caption'>
+									<IconButton
+										className='clipboard-btn'
+										data-clipboard-target='#caption'
+									>
 										<ContentCopyIcon />
 									</IconButton>
 								</div>

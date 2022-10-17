@@ -24,6 +24,7 @@ module.exports = {
 				black: "#000000",
 				"logo-nav-1": "#F2682B",
 				"logo-nav-2": "#F79732",
+				ukm: "#AC8F50",
 			},
 			fontFamily: {
 				poppins: ["poppins", "sans-serif"],

@@ -1,6 +1,6 @@
 import React from "react";
 import Heading from "../../component/heading/Heading";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Keyboard } from "swiper";
 import "swiper/css";
 import RangkaianSlide from "../../component/rangkaian/RangkaianSlide";

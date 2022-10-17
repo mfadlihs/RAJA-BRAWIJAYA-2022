@@ -5,7 +5,6 @@ import {
 	DownloadOutlined,
 	DownOutlined,
 } from "@ant-design/icons";
-import { Button } from "@mui/material";
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
@@ -22,6 +21,7 @@ const optionDaringLuring = [
 		label: "Daring",
 	},
 ];
+
 export default function Atribut() {
 	const [atributId, setAtributId] = useState(0);
 	const [active, setActive] = useState(false);
@@ -123,21 +123,29 @@ export default function Atribut() {
 									<>
 										<div className='text-justify flex-1 '>
 											<ol>
-												{AtributType[atributId].data.rules.map((item, index) => {
-													if (AtributType[atributId].text == "Pita Cluster Luring") {
-														if (index == 0) {
-															return <p key={index}>{item}</p>;
+												{AtributType[atributId].data.rules.map(
+													(item, index) => {
+														if (
+															AtributType[atributId].text ==
+															"Pita Cluster Luring"
+														) {
+															if (index == 0) {
+																return <p key={index}>{item}</p>;
+															}
 														}
+														return <li key={index}>{item}</li>;
 													}
-													return <li key={index}>{item}</li>;
-												})}
+												)}
 											</ol>
 										</div>
 										{AtributType[atributId].text !== "Pita Cluster Luring" && (
 											<div className=' md:max-w-[40%] my-5 md:my-0'>
 												<div className='border-yellow  border-4 p-5 rounded-md'>
 													{/* foto atribut */}
-													<img src={AtributType[atributId].data.image} alt='idCard' />
+													<img
+														src={AtributType[atributId].data.image}
+														alt='idCard'
+													/>
 													<div className='px-5 pt-5'>
 														<a
 															download={AtributType[atributId].data.download}

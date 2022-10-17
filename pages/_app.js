@@ -1,13 +1,24 @@
-import { useEffect, useRef } from "react";
-import "../style/globals.css";
-import "../style/swiperstyle.css";
+import { useEffect, useMemo, useRef } from 'react';
+import '../style/globals.css';
+import 'swiper/css';
+import '../style/swiperstyle.css';
+import { ProviderUkm } from '@/api/ukm';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <div>
-      <Component {...pageProps} />
-    </div>
-  );
+	useEffect(() => {
+		Aos.init();
+		Aos.refresh();
+	}, []);
+
+	return (
+		<ProviderUkm>
+			<div>
+				<Component {...pageProps} />
+			</div>
+		</ProviderUkm>
+	);
 }
 
 export default MyApp;
