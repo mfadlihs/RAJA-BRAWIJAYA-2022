@@ -6,8 +6,6 @@ import Dropdown from "../component/peta/Dropdown";
 import Heading from "../component/heading/Heading";
 import dataMap from "../constants/dataMap";
 
-// console.log(dataMap[0].id);
-
 const getSelectData = p => {
 	return dataMap.filter(e => {
 		return e.id == p;

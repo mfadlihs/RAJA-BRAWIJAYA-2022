@@ -108,9 +108,7 @@ export default function Faq() {
 					setDataGroup(res.data.category_faqs);
 				}
 			})
-			.catch(err => {
-				console.log(err);
-			})
+			.catch(err => {})
 			.finally(() => {
 				setLoading(false);
 			});

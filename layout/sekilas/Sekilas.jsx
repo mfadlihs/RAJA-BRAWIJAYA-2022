@@ -43,9 +43,7 @@ export default function Sekilas() {
 					setVidio(res.data);
 				}
 			})
-			.catch(err => {
-				console.log(err);
-			})
+			.catch(err => {})
 			.finally(() => {
 				setLoading(false);
 			});

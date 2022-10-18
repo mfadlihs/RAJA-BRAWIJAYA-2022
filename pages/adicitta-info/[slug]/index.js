@@ -16,7 +16,6 @@ export default function Index() {
 	const [newsOther, setNewsOther] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const { slug } = router.query;
-	console.log(slug);
 
 	// useEffect(async () => {
 	// 	if (slug != null) {
@@ -37,7 +36,6 @@ export default function Index() {
 			})
 			.catch(err => {
 				router.push("/404");
-				console.log(err);
 			})
 			.finally(() => {
 				setLoading(false);
@@ -46,9 +44,7 @@ export default function Index() {
 			.then(res => {
 				setNewsOther(res.data);
 			})
-			.catch(err => {
-				console.log(err);
-			})
+			.catch(err => {})
 			.finally(() => {
 				setLoading(false);
 			});

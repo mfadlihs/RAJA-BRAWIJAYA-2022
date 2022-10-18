@@ -20,7 +20,13 @@ export default function Dropfaq(props) {
 						: "bg-green text-white"
 				} py-2 px-4 flex justify-between rounded-lg items-center font-poppins`}
 			>
-				<p className={`${props.active == props.id ? 'font-semibold' : 'font-normal'}`}>{props.question}</p>
+				<p
+					className={`${
+						props.active == props.id ? "font-semibold" : "font-normal"
+					}`}
+				>
+					{props.question}
+				</p>
 				<img src='/assets/icons/icPlus.svg' className={`${style.icPlus}`} />
 			</div>
 			<div

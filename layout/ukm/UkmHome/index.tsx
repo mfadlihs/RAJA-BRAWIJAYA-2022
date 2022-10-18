@@ -11,6 +11,8 @@ import { ukm } from "@/api/ukm";
 import { UkmByCategory } from "@/constants/types";
 import swiperCategory from "./category.json";
 import LoadingPage from "@/component/LoadingPage";
+import UkmCard from "./UkmCard";
+import { useMediaQuery } from "react-responsive";
 
 export default function UkmHome() {
 	const ukmData = useContext(ukm);
@@ -18,21 +20,21 @@ export default function UkmHome() {
 
 	const { ukmByCategory, loadingHome } = ukmData;
 
-	useEffect(() => {
-		console.log(ukmByCategory);
-	}, [ukmByCategory]);
+	const lg = useMediaQuery({ query: "(min-width: 1024px)" });
+	const md = useMediaQuery({ query: "(min-width: 768px)" });
+	const sm = useMediaQuery({ query: "(min-width: 640px)" });
 
 	return (
 		<>
 			{loadingHome ? (
 				<LoadingPage />
 			) : (
-				<div className='bg-green select-none overflow-x-hidden min-h-screen'>
+				<div className='bg-green select-none overflow-x-hidden'>
 					<Nav variant='white' trans={true} />
-					<CloudLayer>
-						<WhiteLayer>
-							<div className='pt-28'>
-								<div className='mb-12'>
+					<CloudLayer className=''>
+						<WhiteLayer className=''>
+							<div className='pt-32 lg:pt-28 h-screen lg:h-auto min-h-auto lg:min-h-screen'>
+								<div className=''>
 									<Swiper
 										onSlideChange={swiperCore => {
 											const { realIndex } = swiperCore;
@@ -49,7 +51,7 @@ export default function UkmHome() {
 													{({ isActive }) => {
 														return (
 															<UkmCategory
-																className='w-full font-agrandir font-bold '
+																className='w-full font-agrandir font-bold text-3xl sm:text-5xl md:text-7xl lg:text-8xl'
 																isActive={isActive}
 															>
 																{e.value}
@@ -61,7 +63,8 @@ export default function UkmHome() {
 										})}
 									</Swiper>
 								</div>
-								<div className='pb-24'>
+								{/* <div className='mt-24 mb-8  mx-auto h-3/5 w-min'> */}
+								<div className='mt-24 mb-8 mx-auto h-3/5 md:h-auto w-max md:w-auto'>
 									<Swiper
 										effect={"coverflow"}
 										grabCursor={true}
@@ -80,47 +83,38 @@ export default function UkmHome() {
 											prevEl: "#ukm-detail-prev",
 										}}
 										modules={[Navigation, EffectCoverflow]}
-										className='mySwiper relative'
+										className='mySwiper relative h-full'
 										keyboard
+										loop={true}
+										direction={md ? "horizontal" : "vertical"}
+										mousewheel
 									>
 										{ukmByCategory[category as keyof UkmByCategory].map(val => {
 											return (
 												<SwiperSlide key={val.id}>
 													{({ isActive }) => {
-														return (
-															<Link
-																href={isActive ? `/ukm/${val.slug}` : ""}
-																scroll={false}
-															>
-																<a>
-																	<div
-																		className='bg-gray-400 w-full aspect-video flex items-center justify-center rounded-lg overflow-hidden'
-																		style={{
-																			transition: "background 2s",
-																			background: isActive
-																				? `linear-gradient(0deg, rgba(62, 134, 120, 0.6), rgba(62, 134, 120, 0.6)), url(/assets/images/ukm/uab.jpg)`
-																				: `linear-gradient(0deg, rgba(241, 130, 3, 0.6), rgba(241, 130, 3, 0.6)), url(/assets/images/ukm/uab.jpg)`,
-																		}}
-																	>
-																		<p className='font-agrandir text-center text-white text-7xl'>
-																			{val.name}
-																		</p>
-																	</div>
-																</a>
-															</Link>
-														);
+														return <UkmCard isActive={isActive} val={val} />;
 													}}
 												</SwiperSlide>
 											);
 										})}
-										<Navigator isNext={true} id='ukm-detail-next'>
+										<Navigator
+											isNext={true}
+											className='lg:block hidden'
+											id='ukm-detail-next'
+										>
 											NEXT
 										</Navigator>
-										<Navigator isNext={false} id='ukm-detail-prev'>
+										<Navigator
+											isNext={false}
+											className='lg:block hidden'
+											id='ukm-detail-prev'
+										>
 											PREV
 										</Navigator>
 									</Swiper>
 								</div>
+								<div>.</div>
 							</div>
 						</WhiteLayer>
 					</CloudLayer>

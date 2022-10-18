@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 interface UkmDescriptionProps {
 	desc: string;
@@ -7,10 +7,16 @@ interface UkmDescriptionProps {
 
 export default function UkmDescription({ desc, pesan }: UkmDescriptionProps) {
 	return (
-		<div>
-			<div dangerouslySetInnerHTML={{ __html: desc }} className='whitespace-pre-line bodysmall text-white ' />
+		<div className='text-justify'>
+			<div
+				dangerouslySetInnerHTML={{ __html: desc }}
+				className='whitespace-pre-line bodysmall text-white '
+			/>
 			<br />
-			<div dangerouslySetInnerHTML={{ __html: pesan }} className='whitespace-pre-line bodysmall text-white ' />
+			<div
+				dangerouslySetInnerHTML={{ __html: pesan }}
+				className='whitespace-pre-line bodysmall text-white '
+			/>
 		</div>
 	);
 }

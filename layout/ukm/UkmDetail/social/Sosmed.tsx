@@ -1,5 +1,5 @@
-import Icon from '@/component/icon';
-import { Ukm } from '@/constants/types';
+import Icon from "@/component/icon";
+import { Ukm } from "@/constants/types";
 
 interface SosmedProps {
 	icon: string;
@@ -9,7 +9,7 @@ interface SosmedProps {
 export default function Sosmed({ icon, name }: SosmedProps) {
 	return (
 		<div className='flex gap-3 items-center'>
-			<Icon name={icon} size={50} />
+			<Icon className='w-8 sm:w-10 md:w-11 lg:w-12' name={icon} />
 			<div className='bodysmall text-white'>{name}</div>
 		</div>
 	);

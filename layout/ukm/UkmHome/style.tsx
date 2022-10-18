@@ -7,18 +7,34 @@ interface UkmCategoryProps {
 export const UkmCategory = styled.div<UkmCategoryProps>`
 	-webkit-text-fill-color: ${({ isActive }) =>
 		isActive ? "#147167" : "transparent"};
-	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: #147167;
 	text-align: center;
 	transition: ease 1s;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border-top: ${({ isActive }) => isActive && "4px solid #147167"};
 	border-bottom: ${({ isActive }) => isActive && "4px solid #147167"};
 	&:hover {
 		cursor: pointer;
 	}
-	font-size: 80px;
+	@media (min-width: 1024px) {
+		-webkit-text-stroke-width: 3px;
+		border-top: ${({ isActive }) => isActive && "4px solid #147167"};
+		border-bottom: ${({ isActive }) => isActive && "4px solid #147167"};
+	}
+	@media (min-width: 768px) {
+		-webkit-text-stroke-width: 2px;
+		border-top: ${({ isActive }) => isActive && "3px solid #147167"};
+		border-bottom: ${({ isActive }) => isActive && "3px solid #147167"};
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	@media (min-width: 640px) {
+		-webkit-text-stroke-width: 2px;
+		border-top: ${({ isActive }) => isActive && "2.5px solid #147167"};
+		border-bottom: ${({ isActive }) => isActive && "2.5px solid #147167"};
+	}
+	-webkit-text-stroke-width: 1.5px;
 `;
 
 interface NavigatorProps {

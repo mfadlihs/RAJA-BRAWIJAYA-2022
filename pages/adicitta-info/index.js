@@ -16,11 +16,8 @@ export default function AdiciittaInfo() {
 		apiNews()
 			.then(res => {
 				setNews(res.data);
-				console.log(res.data);
 			})
-			.catch(err => {
-				console.log(err);
-			})
+			.catch(err => {})
 			.finally(() => {
 				setLoading(false);
 			});

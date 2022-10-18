@@ -1,8 +1,7 @@
 export interface Activity {
-	title: string;
-	content: string;
+	body: string;
+	head: string;
 }
-
 export interface FaqUkm {
 	question: string;
 	answer: string;
@@ -23,15 +22,15 @@ export interface Ukm {
 	logo: string;
 	category: ukmCategory;
 	hobby_collect: string;
-	image: string;
+	image: string[];
 	prestasi: string;
 	description: string;
 	pesan: string;
 	instagram: string;
 	line: string;
 	email: string;
-	kegiatan: string;
-	faq: string;
+	kegiatan: Activity[];
+	faq: { answer: string; question: string }[];
 	youtube_vidio: string;
 	register_link: string;
 	zoom_link: string;
