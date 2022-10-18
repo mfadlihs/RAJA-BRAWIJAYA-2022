@@ -4,6 +4,7 @@ import { detailType } from "@/constants/types";
 import Nav from "@/layout/nav/Nav";
 import { url } from "@/lib/api";
 import axios from "axios";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useMemo, useState } from "react";
 import Detail from "./detail";
@@ -25,6 +26,9 @@ function UkmDetail() {
 
 	return data ? (
 		<>
+			<Head>
+				<title>RAJA Brawijaya 2022 | {data.name}</title>
+			</Head>
 			<div className='bg-ukm h-screen'>
 				<Nav variant='white' trans={true} />
 				<Detail data={data} />
