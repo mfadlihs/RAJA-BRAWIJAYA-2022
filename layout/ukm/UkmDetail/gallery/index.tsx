@@ -14,7 +14,7 @@ export default function UkmGallery({ data }: { data: Ukm }) {
 	return (
 		<div className='relative mb-14 md:mb-20'>
 			<div className='h3 mb-3 text-white'>Galeri UKM</div>
-			<div className='bg-gray-400 mb-6 aspect-[2/1] rounded-xl overflow-clip'>
+			<div className='bg-gray-400 mb-2 sm:mb-3 lg:mb-4 aspect-[2/1] rounded-xl overflow-clip'>
 				<Youtube id={data.youtube_vidio} />
 			</div>
 			<div>

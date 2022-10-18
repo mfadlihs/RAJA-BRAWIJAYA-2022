@@ -8,8 +8,12 @@ interface IconProps {
 
 export default function Icon({ name, size, className }: IconProps) {
 	return (
-		<span role='img' aria-label='environment' className={`icon ${className}`}>
-			<img src={`/assets/icons/${name}.svg`} width={size} />
+		<span
+			role='img'
+			aria-label='environment'
+			className={`block icon ${className}`}
+		>
+			<img src={`/assets/icons/${name}.svg`} className='w-full h-full' />
 		</span>
 	);
 }
